@@ -1,0 +1,76 @@
+Tue Oct  4 14:48:10 2022
+ babild: Start PID=15992
+Tue Oct  4 14:48:10 2022
+ babild: Make FIFO /tmp/ebfifo
+Tue Oct  4 14:48:10 2022
+ babild: comfd number = 4
+Tue Oct  4 14:48:11 2022
+ babild: ebfd number = 5
+Tue Oct  4 14:48:11 2022
+ babild: infd number = 6
+Tue Oct  4 14:48:11 2022
+ HD0 ./ 2000000000
+Tue Oct  4 14:48:11 2022
+ no babild.rc
+Tue Oct  4 14:48:11 2022
+ babild: EFN is set 1 by arg
+Tue Oct  4 14:48:11 2022
+ Can't open init/babild.rc
+Tue Oct  4 14:48:11 2022
+ babild: ebbuf malloc add=0x7f1d0888a010, size=1048576
+Tue Oct  4 14:50:09 2022
+ Can't open init/babild.rc
+Tue Oct  4 14:52:25 2022
+ Can't open init/babild.rc
+Tue Oct  4 14:52:36 2022
+ babild: Can't connet to babies id=20.
+Tue Oct  4 14:54:49 2022
+ babild: daq_nssta
+Tue Oct  4 14:54:49 2022
+ efrmain[20]: ebffd number = 14
+Tue Oct  4 14:54:56 2022
+ babild: daq_stop run=0
+Tue Oct  4 14:54:56 2022
+ efrmain[20]: End of Run EFN=20
+Tue Oct  4 14:54:56 2022
+ babild: daq stopped
+Tue Oct  4 14:54:56 2022
+ esevtn[20] : 5392
+Tue Oct  4 14:54:58 2022
+ efrmain[20] : Error (or closed babies) in recv er=0
+Tue Oct  4 14:56:28 2022
+ Can't open init/babild.rc
+Tue Oct  4 14:56:28 2022
+ babild: daq_start runnumber=1
+Tue Oct  4 14:56:28 2022
+ babild: Open HD[0]=/home/quser/data/v2740/20221004//data0001.ridf
+Tue Oct  4 14:56:28 2022
+ efrmain[20]: ebffd number = 16
+Tue Oct  4 14:56:33 2022
+ babild: daq_stop run=1
+Tue Oct  4 14:56:33 2022
+ efrmain[20]: End of Run EFN=20
+Tue Oct  4 14:56:35 2022
+ babild: daq stopped
+Tue Oct  4 14:56:35 2022
+ esevtn[20] : 3983
+Tue Oct  4 14:59:11 2022
+ efrmain[20] : Error (or closed babies) in recv er=0
+Tue Oct  4 15:22:05 2022
+ Can't open init/babild.rc
+Tue Oct  4 15:22:05 2022
+ babild: daq_start runnumber=2
+Tue Oct  4 15:22:05 2022
+ babild: Open HD[0]=/home/quser/data/v2740/20221004//data0002.ridf
+Tue Oct  4 15:22:05 2022
+ efrmain[20]: ebffd number = 17
+Tue Oct  4 15:22:13 2022
+ babild: daq_stop run=2
+Tue Oct  4 15:22:13 2022
+ efrmain[20]: End of Run EFN=20
+Tue Oct  4 15:22:14 2022
+ babild: daq stopped
+Tue Oct  4 15:22:14 2022
+ esevtn[20] : 6181
+Tue Oct  4 15:22:17 2022
+ efrmain[20] : Error (or closed babies) in recv er=0

@@ -1,0 +1,38 @@
+#ifndef TARTRAWV2740DATAOBJECT_H
+#define TARTRAWV2740DATAOBJECT_H
+
+#include "TNamed.h"
+#include "TArtCore.hh"
+
+class TArtRawV2740DataObject : public TNamed
+{
+ public: 
+  TArtRawV2740DataObject();
+  TArtRawV2740DataObject(int);
+  virtual ~TArtRawV2740DataObject();
+
+  virtual void     SetCh        (const int);
+  virtual void     SetGeo       (const int);
+  virtual void     SetTimeStamp (const uint64_t); 
+  virtual void     AddVal       (const int, const int);
+  virtual int      GetCh        (void);
+  virtual int      GetGeo       (void);
+  virtual uint64_t GetTimeStamp (void);
+  virtual int      GetNData     (void);
+  virtual int      GetTimeBacket(int);
+  virtual int      GetVal       (int);
+  virtual void     DumpVal      (void);
+
+ protected:
+
+
+  int geo;    // geo
+  int channel;  // channel in the (CAMAC/VME) module
+  uint64_t timeStamp;
+  std::vector <int> timebacket;
+  std::vector <int> value;
+
+  ClassDef(TArtRawV2740DataObject,1);
+};
+
+#endif

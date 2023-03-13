@@ -1,0 +1,818 @@
+Making all in sources
+make[1]: ディレクトリ '/home/quser/src/anaroot/sources' に入ります
+Making all in Core
+make[2]: ディレクトリ '/home/quser/src/anaroot/sources/Core' に入ります
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtStreamingDataSource.o src/TArtStreamingDataSource.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderFixed16.o src/TArtDecoderFixed16.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderLUPO.o src/TArtDecoderLUPO.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderAMTTDC.o src/TArtDecoderAMTTDC.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderV1740.o src/TArtDecoderV1740.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderHINP.o src/TArtDecoderHINP.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtRawDataObject.o src/TArtRawDataObject.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtSemaphore.o src/TArtSemaphore.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtStoreManager.o src/TArtStoreManager.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtRawScalerObject.o src/TArtRawScalerObject.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderV1190C.o src/TArtDecoderV1190C.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderMDPP16.o src/TArtDecoderMDPP16.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtCore.o src/TArtCore.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtEventStore.o src/TArtEventStore.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderMQDC32.o src/TArtDecoderMQDC32.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtMath.o src/TArtMath.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderFixed32.o src/TArtDecoderFixed32.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtRawSegmentObject.o src/TArtRawSegmentObject.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtParserFactory.o src/TArtParserFactory.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderMADC32.o src/TArtDecoderMADC32.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderFactory.o src/TArtDecoderFactory.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderV1290.o src/TArtDecoderV1290.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderA3400.o src/TArtDecoderA3400.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderP716XZ.o src/TArtDecoderP716XZ.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtRawEventObject.o src/TArtRawEventObject.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderSIS3301.o src/TArtDecoderSIS3301.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderFixed24.o src/TArtDecoderFixed24.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtParserRDF.o src/TArtParserRDF.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderV550.o src/TArtDecoderV550.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderV1190.o src/TArtDecoderV1190.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderDSP.o src/TArtDecoderDSP.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderP716X.o src/TArtDecoderP716X.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtFileDataSource.o src/TArtFileDataSource.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderTacquila.o src/TArtDecoderTacquila.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderBigEndianV7XX.o src/TArtDecoderBigEndianV7XX.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderAD413A.o src/TArtDecoderAD413A.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtParserRIDF.o src/TArtParserRIDF.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtSharedMemoryDataSource.o src/TArtSharedMemoryDataSource.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtParser.o src/TArtParser.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderMTDC32.o src/TArtDecoderMTDC32.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDataSource.o src/TArtDataSource.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderV2740.o src/TArtDecoderV2740.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderNeulandTS.o src/TArtDecoderNeulandTS.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtSharedMemory.o src/TArtSharedMemory.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderV830.o src/TArtDecoderV830.cc
+src/TArtSharedMemoryDataSource.cc: メンバ関数 ‘virtual int TArtSharedMemoryDataSource::Wait()’ 内:
+src/TArtSharedMemoryDataSource.cc:110:1: 警告: 非 void を戻す関数内に return 文がありません [-Wreturn-type]
+ }
+ ^
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderCTM405.o src/TArtDecoderCTM405.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderL3377d.o src/TArtDecoderL3377d.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderV7XX.o src/TArtDecoderV7XX.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderVmeEasyroc.o src/TArtDecoderVmeEasyroc.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtUtil.o src/TArtUtil.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderV767.o src/TArtDecoderV767.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64    -c -o src/TArtDecoderA3100.o src/TArtDecoderA3100.cc
+/bin/sh ../../libtool  --tag=CXX   --mode=link g++  -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -o libanacore.la -rpath /usr/local/lib  anacore_dict.lo src/TArtStreamingDataSource.o src/TArtDecoderFixed16.o src/TArtDecoderLUPO.o src/TArtDecoderAMTTDC.o src/TArtDecoderV1740.o src/TArtDecoderHINP.o src/TArtRawDataObject.o src/TArtSemaphore.o src/TArtStoreManager.o src/TArtRawScalerObject.o src/TArtDecoderV1190C.o src/TArtDecoderMDPP16.o src/TArtCore.o src/TArtEventStore.o src/TArtDecoderMQDC32.o src/TArtMath.o src/TArtDecoderFixed32.o src/TArtRawSegmentObject.o src/TArtParserFactory.o src/TArtDecoderMADC32.o src/TArtDecoderFactory.o src/TArtDecoderV1290.o src/TArtDecoderA3400.o src/TArtDecoderP716XZ.o src/TArtRawEventObject.o src/TArtDecoderSIS3301.o src/TArtDecoderFixed24.o src/TArtParserRDF.o src/TArtDecoderV550.o src/TArtDecoderV1190.o src/TArtDecoderDSP.o src/TArtDecoderP716X.o src/TArtFileDataSource.o src/TArtDecoderTacquila.o src/TArtDecoderBigEndianV7XX.o src/TArtDecoderAD413A.o src/TArtParserRIDF.o src/TArtSharedMemoryDataSource.o src/TArtParser.o src/TArtDecoderMTDC32.o src/TArtDataSource.o src/TArtDecoderV2740.o src/TArtDecoderNeulandTS.o src/TArtSharedMemory.o src/TArtDecoderV830.o src/TArtDecoderCTM405.o src/TArtDecoderL3377d.o src/TArtDecoderV7XX.o src/TArtDecoderVmeEasyroc.o src/TArtUtil.o src/TArtDecoderV767.o src/TArtDecoderA3100.o 
+
+*** Warning: Linking the shared library libanacore.la against the non-libtool
+*** objects  src/TArtStreamingDataSource.o src/TArtDecoderFixed16.o src/TArtDecoderLUPO.o src/TArtDecoderAMTTDC.o src/TArtDecoderV1740.o src/TArtDecoderHINP.o src/TArtRawDataObject.o src/TArtSemaphore.o src/TArtStoreManager.o src/TArtRawScalerObject.o src/TArtDecoderV1190C.o src/TArtDecoderMDPP16.o src/TArtCore.o src/TArtEventStore.o src/TArtDecoderMQDC32.o src/TArtMath.o src/TArtDecoderFixed32.o src/TArtRawSegmentObject.o src/TArtParserFactory.o src/TArtDecoderMADC32.o src/TArtDecoderFactory.o src/TArtDecoderV1290.o src/TArtDecoderA3400.o src/TArtDecoderP716XZ.o src/TArtRawEventObject.o src/TArtDecoderSIS3301.o src/TArtDecoderFixed24.o src/TArtParserRDF.o src/TArtDecoderV550.o src/TArtDecoderV1190.o src/TArtDecoderDSP.o src/TArtDecoderP716X.o src/TArtFileDataSource.o src/TArtDecoderTacquila.o src/TArtDecoderBigEndianV7XX.o src/TArtDecoderAD413A.o src/TArtParserRIDF.o src/TArtSharedMemoryDataSource.o src/TArtParser.o src/TArtDecoderMTDC32.o src/TArtDataSource.o src/TArtDecoderV2740.o src/TArtDecoderNeulandTS.o src/TArtSharedMemory.o src/TArtDecoderV830.o src/TArtDecoderCTM405.o src/TArtDecoderL3377d.o src/TArtDecoderV7XX.o src/TArtDecoderVmeEasyroc.o src/TArtUtil.o src/TArtDecoderV767.o src/TArtDecoderA3100.o is not portable!
+libtool: link: rm -fr  .libs/libanacore.la .libs/libanacore.lai .libs/libanacore.so .libs/libanacore.so.0 .libs/libanacore.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/anacore_dict.o  src/TArtStreamingDataSource.o src/TArtDecoderFixed16.o src/TArtDecoderLUPO.o src/TArtDecoderAMTTDC.o src/TArtDecoderV1740.o src/TArtDecoderHINP.o src/TArtRawDataObject.o src/TArtSemaphore.o src/TArtStoreManager.o src/TArtRawScalerObject.o src/TArtDecoderV1190C.o src/TArtDecoderMDPP16.o src/TArtCore.o src/TArtEventStore.o src/TArtDecoderMQDC32.o src/TArtMath.o src/TArtDecoderFixed32.o src/TArtRawSegmentObject.o src/TArtParserFactory.o src/TArtDecoderMADC32.o src/TArtDecoderFactory.o src/TArtDecoderV1290.o src/TArtDecoderA3400.o src/TArtDecoderP716XZ.o src/TArtRawEventObject.o src/TArtDecoderSIS3301.o src/TArtDecoderFixed24.o src/TArtParserRDF.o src/TArtDecoderV550.o src/TArtDecoderV1190.o src/TArtDecoderDSP.o src/TArtDecoderP716X.o src/TArtFileDataSource.o src/TArtDecoderTacquila.o src/TArtDecoderBigEndianV7XX.o src/TArtDecoderAD413A.o src/TArtParserRIDF.o src/TArtSharedMemoryDataSource.o src/TArtParser.o src/TArtDecoderMTDC32.o src/TArtDataSource.o src/TArtDecoderV2740.o src/TArtDecoderNeulandTS.o src/TArtSharedMemory.o src/TArtDecoderV830.o src/TArtDecoderCTM405.o src/TArtDecoderL3377d.o src/TArtDecoderV7XX.o src/TArtDecoderVmeEasyroc.o src/TArtUtil.o src/TArtDecoderV767.o src/TArtDecoderA3100.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -pthread -m64 -pthread -pthread   -pthread -Wl,-soname -Wl,libanacore.so.0 -o .libs/libanacore.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanacore.so.0" && ln -s "libanacore.so.0.0.0" "libanacore.so.0")
+libtool: link: (cd ".libs" && rm -f "libanacore.so" && ln -s "libanacore.so.0.0.0" "libanacore.so")
+libtool: link: ( cd ".libs" && rm -f "libanacore.la" && ln -s "../libanacore.la" "libanacore.la" )
+make[2]: ディレクトリ '/home/quser/src/anaroot/sources/Core' から出ます
+Making all in Reconstruction
+make[2]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction' に入ります
+Making all in BigRIPS
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/BigRIPS' に入ります
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtRecoRIPS.o src/TArtRecoRIPS.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibPID.o src/TArtCalibPID.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibSi.o src/TArtCalibSi.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtRecoPID.o src/TArtRecoPID.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibGe.o src/TArtCalibGe.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibPPAC.o src/TArtCalibPPAC.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibIC.o src/TArtCalibIC.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibFocalPlane.o src/TArtCalibFocalPlane.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtBigRIPSParameters.o src/TArtBigRIPSParameters.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibPlastic.o src/TArtCalibPlastic.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtRecoBeam.o src/TArtRecoBeam.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtRIPSPara.o src/TArtRIPSPara.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtRecoTOF.o src/TArtRecoTOF.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibCoin.o src/TArtCalibCoin.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibTKE.o src/TArtCalibTKE.cc
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++  -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -o libanabrips.la -rpath /usr/local/lib  anabrips_dict.lo src/TArtRecoRIPS.o src/TArtCalibPID.o src/TArtCalibSi.o src/TArtRecoPID.o src/TArtCalibGe.o src/TArtCalibPPAC.o src/TArtCalibIC.o src/TArtCalibFocalPlane.o src/TArtBigRIPSParameters.o src/TArtCalibPlastic.o src/TArtRecoBeam.o src/TArtRIPSPara.o src/TArtRecoTOF.o src/TArtCalibCoin.o src/TArtCalibTKE.o 
+
+*** Warning: Linking the shared library libanabrips.la against the non-libtool
+*** objects  src/TArtRecoRIPS.o src/TArtCalibPID.o src/TArtCalibSi.o src/TArtRecoPID.o src/TArtCalibGe.o src/TArtCalibPPAC.o src/TArtCalibIC.o src/TArtCalibFocalPlane.o src/TArtBigRIPSParameters.o src/TArtCalibPlastic.o src/TArtRecoBeam.o src/TArtRIPSPara.o src/TArtRecoTOF.o src/TArtCalibCoin.o src/TArtCalibTKE.o is not portable!
+libtool: link: rm -fr  .libs/libanabrips.la .libs/libanabrips.lai .libs/libanabrips.so .libs/libanabrips.so.0 .libs/libanabrips.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/anabrips_dict.o  src/TArtRecoRIPS.o src/TArtCalibPID.o src/TArtCalibSi.o src/TArtRecoPID.o src/TArtCalibGe.o src/TArtCalibPPAC.o src/TArtCalibIC.o src/TArtCalibFocalPlane.o src/TArtBigRIPSParameters.o src/TArtCalibPlastic.o src/TArtRecoBeam.o src/TArtRIPSPara.o src/TArtRecoTOF.o src/TArtCalibCoin.o src/TArtCalibTKE.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -pthread -m64 -pthread -pthread   -pthread -Wl,-soname -Wl,libanabrips.so.0 -o .libs/libanabrips.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanabrips.so.0" && ln -s "libanabrips.so.0.0.0" "libanabrips.so.0")
+libtool: link: (cd ".libs" && rm -f "libanabrips.so" && ln -s "libanabrips.so.0.0.0" "libanabrips.so")
+libtool: link: ( cd ".libs" && rm -f "libanabrips.la" && ln -s "../libanabrips.la" "libanabrips.la" )
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/BigRIPS' から出ます
+Making all in DALI
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/DALI' に入ります
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include  -I../../Reconstruction/SAMURAI/include    -c -o src/TArtDALIParameters.o src/TArtDALIParameters.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include  -I../../Reconstruction/SAMURAI/include    -c -o src/TArtCalibDALI.o src/TArtCalibDALI.cc
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++  -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include  -I../../Reconstruction/SAMURAI/include  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -o libanadali.la -rpath /usr/local/lib  anadali_dict.lo src/TArtDALIParameters.o src/TArtCalibDALI.o 
+
+*** Warning: Linking the shared library libanadali.la against the non-libtool
+*** objects  src/TArtDALIParameters.o src/TArtCalibDALI.o is not portable!
+libtool: link: rm -fr  .libs/libanadali.la .libs/libanadali.lai .libs/libanadali.so .libs/libanadali.so.0 .libs/libanadali.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/anadali_dict.o  src/TArtDALIParameters.o src/TArtCalibDALI.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -pthread -m64 -pthread -pthread   -pthread -Wl,-soname -Wl,libanadali.so.0 -o .libs/libanadali.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanadali.so.0" && ln -s "libanadali.so.0.0.0" "libanadali.so.0")
+libtool: link: (cd ".libs" && rm -f "libanadali.so" && ln -s "libanadali.so.0.0.0" "libanadali.so")
+libtool: link: ( cd ".libs" && rm -f "libanadali.la" && ln -s "../libanadali.la" "libanadali.la" )
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/DALI' から出ます
+Making all in SAMURAI
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/SAMURAI' に入ります
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibS1DC1Hit.o src/TArtCalibS1DC1Hit.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibSimpleBDC2Track.o src/TArtCalibSimpleBDC2Track.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtSAMURAIParameters.o src/TArtSAMURAIParameters.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtNEBULAFilter.o src/TArtNEBULAFilter.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtRecoFragment.o src/TArtRecoFragment.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/MathTools.o src/MathTools.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtRecoNeutron.o src/TArtRecoNeutron.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtHIMEFilter.o src/TArtHIMEFilter.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibNeuLANDVETO.o src/TArtCalibNeuLANDVETO.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibSAMURAI.o src/TArtCalibSAMURAI.cc
+src/TArtSAMURAIParameters.cc: デストラクタ ‘virtual TArtSAMURAIParameters::~TArtSAMURAIParameters()’ 内:
+src/TArtSAMURAIParameters.cc:92:55: 警告: 変数 ‘it_pvec’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+       std::vector<const TArtNEBULAPlaPara*>::iterator it_pvec = pvec.begin();
+                                                       ^~~~~~~
+src/TArtSAMURAIParameters.cc:105:55: 警告: 変数 ‘it_pvec’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+       std::vector<const TArtNEBULAPlaPara*>::iterator it_pvec = pvec.begin();
+                                                       ^~~~~~~
+src/TArtSAMURAIParameters.cc:118:55: 警告: 変数 ‘it_pvec’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+       std::vector<const TArtNEBULAHPCPara*>::iterator it_pvec = pvec.begin();
+                                                       ^~~~~~~
+src/TArtSAMURAIParameters.cc:131:56: 警告: 変数 ‘it_pvec’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+       std::vector<const TArtNeuLANDPlaPara*>::iterator it_pvec = pvec.begin();
+                                                        ^~~~~~~
+src/TArtSAMURAIParameters.cc:144:54: 警告: 変数 ‘it_pvec’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+       std::vector<const TArtTacquilaPara*>::iterator it_pvec = pvec.begin();
+                                                      ^~~~~~~
+src/TArtSAMURAIParameters.cc:157:55: 警告: 変数 ‘it_pvec’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+       std::vector<const TArtNEBULAPlaPara*>::iterator it_pvec = pvec.begin();
+                                                       ^~~~~~~
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibRPDCTrack.o src/TArtCalibRPDCTrack.cc
+src/TArtSAMURAIParameters.cc:170:53: 警告: 変数 ‘it_pvec’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+       std::vector<const TArtHIMEPlaPara*>::iterator it_pvec = pvec.begin();
+                                                     ^~~~~~~
+src/TArtSAMURAIParameters.cc:183:53: 警告: 変数 ‘it_pvec’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+       std::vector<const TArtHIMEPlaPara*>::iterator it_pvec = pvec.begin();
+                                                     ^~~~~~~
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/FieldMan.o src/FieldMan.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibBDC2Hit.o src/TArtCalibBDC2Hit.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/DCGeomRecord.o src/DCGeomRecord.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibBDC1Hit.o src/TArtCalibBDC1Hit.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibBPCHit.o src/TArtCalibBPCHit.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalcGlobalTrack.o src/TArtCalcGlobalTrack.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibNeuLAND.o src/TArtCalibNeuLAND.cc
+src/TArtCalibSAMURAI.cc: メンバ関数 ‘void TArtCalibSAMURAI::LoadDCSTC(char*)’ 内:
+src/TArtCalibSAMURAI.cc:153:8: 警告: unused variable ‘myname’ [-Wunused-variable]
+   char myname[128];
+        ^~~~~~
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibFDC0Hit.o src/TArtCalibFDC0Hit.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibFDC1Track.o src/TArtCalibFDC1Track.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibNEBULA.o src/TArtCalibNEBULA.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibDCHit.o src/TArtCalibDCHit.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibSimpleBDC1Track.o src/TArtCalibSimpleBDC1Track.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibS1DC2Track.o src/TArtCalibS1DC2Track.cc
+src/TArtCalibNeuLAND.cc: メンバ関数 ‘virtual void TArtCalibNeuLAND::ReconstructData()’ 内:
+src/TArtCalibNeuLAND.cc:196:18: 警告: unused variable ‘time_ref’ [-Wunused-variable]
+         Double_t time_ref = para->GetTDCTCal(0, pla->GetTacRef(0), true);
+                  ^~~~~~~~
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/SAMURAIFieldMap.o src/SAMURAIFieldMap.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibSimpleFDC0Track.o src/TArtCalibSimpleFDC0Track.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibSimpleDCTrack.o src/TArtCalibSimpleDCTrack.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/DCConfMan.o src/DCConfMan.cc
+src/TArtCalibDCHit.cc: メンバ関数 ‘virtual void TArtCalibDCHit::LoadData()’ 内:
+src/TArtCalibDCHit.cc:49:11: 警告: unused variable ‘nhit’ [-Wunused-variable]
+     Int_t nhit = fDCHitArray->GetEntries();
+           ^~~~
+src/TArtCalibDCHit.cc: メンバ関数 ‘virtual void TArtCalibDCHit::ReconstructData()’ 内:
+src/TArtCalibDCHit.cc:77:11: 警告: unused variable ‘myTDC’ [-Wunused-variable]
+     Int_t myTDC = (Double_t)hit->GetTDC();
+           ^~~~~
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibRPTOFPla.o src/TArtCalibRPTOFPla.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibSAMURAITZero.o src/TArtCalibSAMURAITZero.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibS1DC1Track.o src/TArtCalibS1DC1Track.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibBDC2Track.o src/TArtCalibBDC2Track.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibDCTrack.o src/TArtCalibDCTrack.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/RungeKuttaUtilities.o src/RungeKuttaUtilities.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibTEDCsI.o src/TArtCalibTEDCsI.cc
+src/TArtCalibSimpleDCTrack.cc: メンバ関数 ‘TArtCalibSimpleDCTrack::Track1D* TArtCalibSimpleDCTrack::CalcTrack1D(std::vector<TArtDCHit*>*)’ 内:
+src/TArtCalibSimpleDCTrack.cc:587:8: 警告: unused variable ‘sign’ [-Wunused-variable]
+  Int_t sign = i&((Int_t)pow(2,l)) ? 1 : -1;
+        ^~~~
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibSimpleFDC2Track.o src/TArtCalibSimpleFDC2Track.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtRecoSAMURAI.o src/TArtRecoSAMURAI.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibNEBULAHPC.o src/TArtCalibNEBULAHPC.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibHIME.o src/TArtCalibHIME.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibPDCTrack.o src/TArtCalibPDCTrack.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibFDC2Hit.o src/TArtCalibFDC2Hit.cc
+src/TArtCalibTEDCsI.cc: メンバ関数 ‘virtual void TArtCalibTEDCsI::ReconstructData()’ 内:
+src/TArtCalibTEDCsI.cc:121:15: 警告: unused variable ‘csi’ [-Wunused-variable]
+   TArtTEDCsI *csi = 0;
+               ^~~
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibBDC1Track.o src/TArtCalibBDC1Track.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibFDC1Hit.o src/TArtCalibFDC1Hit.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibNINJA.o src/TArtCalibNINJA.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibPDCHit.o src/TArtCalibPDCHit.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibFDC2Track.o src/TArtCalibFDC2Track.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibSimpleFDC1Track.o src/TArtCalibSimpleFDC1Track.cc
+src/TArtCalibPDCTrack.cc: メンバ関数 ‘virtual void TArtCalibPDCTrack::ReconstructData()’ 内:
+src/TArtCalibPDCTrack.cc:100:23: 警告: unused variable ‘Z’ [-Wunused-variable]
+   Double_t X =0, Y=0, Z=0, U=0, V=0;
+                       ^
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibHODPla.o src/TArtCalibHODPla.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibRPDCHit.o src/TArtCalibRPDCHit.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibICF.o src/TArtCalibICF.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibS1DC2Hit.o src/TArtCalibS1DC2Hit.cc
+src/TArtCalibNINJA.cc: メンバ関数 ‘virtual void TArtCalibNINJA::ReconstructData()’ 内:
+src/TArtCalibNINJA.cc:173:12: 警告: 変数 ‘t0’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+     double t0 = TArtMath::InvalidNum();
+            ^~
+src/TArtCalibNINJA.cc:220:12: 警告: unused variable ‘linear_pos_le’ [-Wunused-variable]
+     double linear_pos_le =  pla->fT_LECal[0] - pla->fT_LECal[1];
+            ^~~~~~~~~~~~~
+src/TArtCalibNINJA.cc:221:12: 警告: unused variable ‘linear_pos_te’ [-Wunused-variable]
+     double linear_pos_te =  pla->fT_TECal[0] - pla->fT_TECal[1];
+            ^~~~~~~~~~~~~
+src/TArtCalibNINJA.cc:163:12: 警告: unused variable ‘posoff’ [-Wunused-variable]
+   Double_t posoff[3] = {0,0,0};
+            ^~~~~~
+src/TArtCalibPDCHit.cc: メンバ関数 ‘virtual void TArtCalibPDCHit::LoadData(TArtRawSegmentObject*)’ 内:
+src/TArtCalibPDCHit.cc:63:9: 警告: ‘else’ が曖昧になることを避けるために明示的に中括弧で括ることを推奨します [-Wdangling-else]
+       if(mm==*((TArtRIDFMap *)para->GetTDCMap()))
+         ^
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include    -c -o src/TArtCalibFDC0Track.o src/TArtCalibFDC0Track.cc
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++  -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -o libanasamurai.la -rpath /usr/local/lib  anasamurai_dict.lo src/TArtCalibS1DC1Hit.o src/TArtCalibSimpleBDC2Track.o src/TArtSAMURAIParameters.o src/TArtNEBULAFilter.o src/TArtRecoFragment.o src/MathTools.o src/TArtRecoNeutron.o src/TArtHIMEFilter.o src/TArtCalibNeuLANDVETO.o src/TArtCalibSAMURAI.o src/TArtCalibRPDCTrack.o src/FieldMan.o src/TArtCalibBDC2Hit.o src/DCGeomRecord.o src/TArtCalibBDC1Hit.o src/TArtCalibBPCHit.o src/TArtCalcGlobalTrack.o src/TArtCalibNeuLAND.o src/TArtCalibFDC0Hit.o src/TArtCalibFDC1Track.o src/TArtCalibNEBULA.o src/TArtCalibDCHit.o src/TArtCalibSimpleBDC1Track.o src/TArtCalibS1DC2Track.o src/SAMURAIFieldMap.o src/TArtCalibSimpleFDC0Track.o src/TArtCalibSimpleDCTrack.o src/DCConfMan.o src/TArtCalibRPTOFPla.o src/TArtCalibSAMURAITZero.o src/TArtCalibS1DC1Track.o src/TArtCalibBDC2Track.o src/TArtCalibDCTrack.o src/RungeKuttaUtilities.o src/TArtCalibTEDCsI.o src/TArtCalibSimpleFDC2Track.o src/TArtRecoSAMURAI.o src/TArtCalibNEBULAHPC.o src/TArtCalibHIME.o src/TArtCalibPDCTrack.o src/TArtCalibFDC2Hit.o src/TArtCalibBDC1Track.o src/TArtCalibFDC1Hit.o src/TArtCalibNINJA.o src/TArtCalibPDCHit.o src/TArtCalibFDC2Track.o src/TArtCalibSimpleFDC1Track.o src/TArtCalibHODPla.o src/TArtCalibRPDCHit.o src/TArtCalibICF.o src/TArtCalibS1DC2Hit.o src/TArtCalibFDC0Track.o 
+
+*** Warning: Linking the shared library libanasamurai.la against the non-libtool
+*** objects  src/TArtCalibS1DC1Hit.o src/TArtCalibSimpleBDC2Track.o src/TArtSAMURAIParameters.o src/TArtNEBULAFilter.o src/TArtRecoFragment.o src/MathTools.o src/TArtRecoNeutron.o src/TArtHIMEFilter.o src/TArtCalibNeuLANDVETO.o src/TArtCalibSAMURAI.o src/TArtCalibRPDCTrack.o src/FieldMan.o src/TArtCalibBDC2Hit.o src/DCGeomRecord.o src/TArtCalibBDC1Hit.o src/TArtCalibBPCHit.o src/TArtCalcGlobalTrack.o src/TArtCalibNeuLAND.o src/TArtCalibFDC0Hit.o src/TArtCalibFDC1Track.o src/TArtCalibNEBULA.o src/TArtCalibDCHit.o src/TArtCalibSimpleBDC1Track.o src/TArtCalibS1DC2Track.o src/SAMURAIFieldMap.o src/TArtCalibSimpleFDC0Track.o src/TArtCalibSimpleDCTrack.o src/DCConfMan.o src/TArtCalibRPTOFPla.o src/TArtCalibSAMURAITZero.o src/TArtCalibS1DC1Track.o src/TArtCalibBDC2Track.o src/TArtCalibDCTrack.o src/RungeKuttaUtilities.o src/TArtCalibTEDCsI.o src/TArtCalibSimpleFDC2Track.o src/TArtRecoSAMURAI.o src/TArtCalibNEBULAHPC.o src/TArtCalibHIME.o src/TArtCalibPDCTrack.o src/TArtCalibFDC2Hit.o src/TArtCalibBDC1Track.o src/TArtCalibFDC1Hit.o src/TArtCalibNINJA.o src/TArtCalibPDCHit.o src/TArtCalibFDC2Track.o src/TArtCalibSimpleFDC1Track.o src/TArtCalibHODPla.o src/TArtCalibRPDCHit.o src/TArtCalibICF.o src/TArtCalibS1DC2Hit.o src/TArtCalibFDC0Track.o is not portable!
+libtool: link: rm -fr  .libs/libanasamurai.la .libs/libanasamurai.lai .libs/libanasamurai.so .libs/libanasamurai.so.0 .libs/libanasamurai.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/anasamurai_dict.o  src/TArtCalibS1DC1Hit.o src/TArtCalibSimpleBDC2Track.o src/TArtSAMURAIParameters.o src/TArtNEBULAFilter.o src/TArtRecoFragment.o src/MathTools.o src/TArtRecoNeutron.o src/TArtHIMEFilter.o src/TArtCalibNeuLANDVETO.o src/TArtCalibSAMURAI.o src/TArtCalibRPDCTrack.o src/FieldMan.o src/TArtCalibBDC2Hit.o src/DCGeomRecord.o src/TArtCalibBDC1Hit.o src/TArtCalibBPCHit.o src/TArtCalcGlobalTrack.o src/TArtCalibNeuLAND.o src/TArtCalibFDC0Hit.o src/TArtCalibFDC1Track.o src/TArtCalibNEBULA.o src/TArtCalibDCHit.o src/TArtCalibSimpleBDC1Track.o src/TArtCalibS1DC2Track.o src/SAMURAIFieldMap.o src/TArtCalibSimpleFDC0Track.o src/TArtCalibSimpleDCTrack.o src/DCConfMan.o src/TArtCalibRPTOFPla.o src/TArtCalibSAMURAITZero.o src/TArtCalibS1DC1Track.o src/TArtCalibBDC2Track.o src/TArtCalibDCTrack.o src/RungeKuttaUtilities.o src/TArtCalibTEDCsI.o src/TArtCalibSimpleFDC2Track.o src/TArtRecoSAMURAI.o src/TArtCalibNEBULAHPC.o src/TArtCalibHIME.o src/TArtCalibPDCTrack.o src/TArtCalibFDC2Hit.o src/TArtCalibBDC1Track.o src/TArtCalibFDC1Hit.o src/TArtCalibNINJA.o src/TArtCalibPDCHit.o src/TArtCalibFDC2Track.o src/TArtCalibSimpleFDC1Track.o src/TArtCalibHODPla.o src/TArtCalibRPDCHit.o src/TArtCalibICF.o src/TArtCalibS1DC2Hit.o src/TArtCalibFDC0Track.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -g -pthread -m64 -pthread -pthread   -pthread -Wl,-soname -Wl,libanasamurai.so.0 -o .libs/libanasamurai.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanasamurai.so.0" && ln -s "libanasamurai.so.0.0.0" "libanasamurai.so.0")
+libtool: link: (cd ".libs" && rm -f "libanasamurai.so" && ln -s "libanasamurai.so.0.0.0" "libanasamurai.so")
+libtool: link: ( cd ".libs" && rm -f "libanasamurai.la" && ln -s "../libanasamurai.la" "libanasamurai.la" )
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/SAMURAI' から出ます
+Making all in WINDS
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/WINDS' に入ります
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include   -c -o src/TArtCalibWINDSPla.o src/TArtCalibWINDSPla.cc
+g++ -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include   -c -o src/TArtWINDSParameters.o src/TArtWINDSParameters.cc
+src/TArtWINDSParameters.cc: メンバ関数 ‘TArtWINDSPlaPara* TArtWINDSParameters::ParseWINDSPlaPara(TXMLNode*)’ 内:
+src/TArtWINDSParameters.cc:163:8: 警告: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+        if (strcmp(node->GetNodeName(),"xcenter")==0)
+        ^~
+src/TArtWINDSParameters.cc:165:9: 備考: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+         if (strcmp(node->GetNodeName(),"ycenter")==0)
+         ^~
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++  -Wall -g -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -o libanawinds.la -rpath /usr/local/lib  anawinds_dict.lo src/TArtCalibWINDSPla.o src/TArtWINDSParameters.o 
+
+*** Warning: Linking the shared library libanawinds.la against the non-libtool
+*** objects  src/TArtCalibWINDSPla.o src/TArtWINDSParameters.o is not portable!
+libtool: link: rm -fr  .libs/libanawinds.la .libs/libanawinds.lai .libs/libanawinds.so .libs/libanawinds.so.0 .libs/libanawinds.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/anawinds_dict.o  src/TArtCalibWINDSPla.o src/TArtWINDSParameters.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -g -pthread -m64 -pthread -pthread   -pthread -Wl,-soname -Wl,libanawinds.so.0 -o .libs/libanawinds.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanawinds.so.0" && ln -s "libanawinds.so.0.0.0" "libanawinds.so.0")
+libtool: link: (cd ".libs" && rm -f "libanawinds.so" && ln -s "libanawinds.so.0.0.0" "libanawinds.so")
+libtool: link: ( cd ".libs" && rm -f "libanawinds.la" && ln -s "../libanawinds.la" "libanawinds.la" )
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/WINDS' から出ます
+Making all in ESPRI
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/ESPRI' に入ります
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibDia.o src/TArtCalibDia.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtUserParameters.o src/TArtUserParameters.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtESPRIParameters.o src/TArtESPRIParameters.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibBDC.o src/TArtCalibBDC.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibPlas.o src/TArtCalibPlas.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibFADC.o src/TArtCalibFADC.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibRDC.o src/TArtCalibRDC.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibRNaI.o src/TArtCalibRNaI.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibBLD.o src/TArtCalibBLD.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include   -c -o src/TArtCalibTDCHit.o src/TArtCalibTDCHit.cc
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++  -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -o libanaespri.la -rpath /usr/local/lib  anaespri_dict.lo src/TArtCalibDia.o src/TArtUserParameters.o src/TArtESPRIParameters.o src/TArtCalibBDC.o src/TArtCalibPlas.o src/TArtCalibFADC.o src/TArtCalibRDC.o src/TArtCalibRNaI.o src/TArtCalibBLD.o src/TArtCalibTDCHit.o 
+
+*** Warning: Linking the shared library libanaespri.la against the non-libtool
+*** objects  src/TArtCalibDia.o src/TArtUserParameters.o src/TArtESPRIParameters.o src/TArtCalibBDC.o src/TArtCalibPlas.o src/TArtCalibFADC.o src/TArtCalibRDC.o src/TArtCalibRNaI.o src/TArtCalibBLD.o src/TArtCalibTDCHit.o is not portable!
+libtool: link: rm -fr  .libs/libanaespri.la .libs/libanaespri.lai .libs/libanaespri.so .libs/libanaespri.so.0 .libs/libanaespri.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/anaespri_dict.o  src/TArtCalibDia.o src/TArtUserParameters.o src/TArtESPRIParameters.o src/TArtCalibBDC.o src/TArtCalibPlas.o src/TArtCalibFADC.o src/TArtCalibRDC.o src/TArtCalibRNaI.o src/TArtCalibBLD.o src/TArtCalibTDCHit.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -pthread -m64 -pthread -pthread   -pthread -Wl,-soname -Wl,libanaespri.so.0 -o .libs/libanaespri.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanaespri.so.0" && ln -s "libanaespri.so.0.0.0" "libanaespri.so.0")
+libtool: link: (cd ".libs" && rm -f "libanaespri.so" && ln -s "libanaespri.so.0.0.0" "libanaespri.so")
+libtool: link: ( cd ".libs" && rm -f "libanaespri.la" && ln -s "../libanaespri.la" "libanaespri.la" )
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/ESPRI' から出ます
+Making all in CATANA
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/CATANA' に入ります
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include  -I../../Reconstruction/SAMURAI/include    -c -o src/TArtCalibCATANA.o src/TArtCalibCATANA.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include  -I../../Reconstruction/SAMURAI/include    -c -o src/TArtCATANAParameters.o src/TArtCATANAParameters.cc
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++  -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include  -I../../Reconstruction/SAMURAI/include  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -o libanacatana.la -rpath /usr/local/lib  anacatana_dict.lo src/TArtCalibCATANA.o src/TArtCATANAParameters.o 
+
+*** Warning: Linking the shared library libanacatana.la against the non-libtool
+*** objects  src/TArtCalibCATANA.o src/TArtCATANAParameters.o is not portable!
+libtool: link: rm -fr  .libs/libanacatana.la .libs/libanacatana.lai .libs/libanacatana.so .libs/libanacatana.so.0 .libs/libanacatana.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/anacatana_dict.o  src/TArtCalibCATANA.o src/TArtCATANAParameters.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -pthread -m64 -pthread -pthread   -pthread -Wl,-soname -Wl,libanacatana.so.0 -o .libs/libanacatana.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanacatana.so.0" && ln -s "libanacatana.so.0.0.0" "libanacatana.so.0")
+libtool: link: (cd ".libs" && rm -f "libanacatana.so" && ln -s "libanacatana.so.0.0.0" "libanacatana.so")
+libtool: link: ( cd ".libs" && rm -f "libanacatana.la" && ln -s "../libanacatana.la" "libanacatana.la" )
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/CATANA' から出ます
+Making all in SILICONS
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/SILICONS' に入ります
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include  -I../../Reconstruction/SAMURAI/include    -c -o src/TArtSILICONSParameters.o src/TArtSILICONSParameters.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include  -I../../Reconstruction/SAMURAI/include    -c -o src/TArtCalibSILICONS.o src/TArtCalibSILICONS.cc
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++  -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -I../../Core/include -I../../Reconstruction/BigRIPS/include  -I../../Reconstruction/SAMURAI/include  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -o libanasilicons.la -rpath /usr/local/lib  anasilicons_dict.lo src/TArtSILICONSParameters.o src/TArtCalibSILICONS.o 
+
+*** Warning: Linking the shared library libanasilicons.la against the non-libtool
+*** objects  src/TArtSILICONSParameters.o src/TArtCalibSILICONS.o is not portable!
+libtool: link: rm -fr  .libs/libanasilicons.la .libs/libanasilicons.lai .libs/libanasilicons.so .libs/libanasilicons.so.0 .libs/libanasilicons.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/anasilicons_dict.o  src/TArtSILICONSParameters.o src/TArtCalibSILICONS.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -pthread -m64 -pthread -pthread   -pthread -Wl,-soname -Wl,libanasilicons.so.0 -o .libs/libanasilicons.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanasilicons.so.0" && ln -s "libanasilicons.so.0.0.0" "libanasilicons.so.0")
+libtool: link: (cd ".libs" && rm -f "libanasilicons.so" && ln -s "libanasilicons.so.0.0.0" "libanasilicons.so")
+libtool: link: ( cd ".libs" && rm -f "libanasilicons.la" && ln -s "../libanasilicons.la" "libanasilicons.la" )
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction/SILICONS' から出ます
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction' に入ります
+make[3]: 'all-am' に対して行うべき事はありません.
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction' から出ます
+make[2]: ディレクトリ '/home/quser/src/anaroot/sources/Reconstruction' から出ます
+Making all in Nadeko
+make[2]: ディレクトリ '/home/quser/src/anaroot/sources/Nadeko' に入ります
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall   -c -o src/TArtAlias.o src/TArtAlias.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall   -c -o src/TArtSimpleFunction.o src/TArtSimpleFunction.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall   -c -o src/TArtExec.o src/TArtExec.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall   -c -o src/TArtObjLinkManager.o src/TArtObjLinkManager.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall   -c -o src/TArtCanvasManager.o src/TArtCanvasManager.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall   -c -o src/TArtGlobal.o src/TArtGlobal.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall   -c -o src/TArtHistManager.o src/TArtHistManager.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall   -c -o src/TArtTreeManager.o src/TArtTreeManager.cc
+In file included from src/TArtCanvasManager.cc:2:
+include/TArtCanvasManager.hh:33:39: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   static void SaveAs(char* filename = "", Option_t* option = "");
+                                       ^~
+In file included from src/TArtHistManager.cc:3:
+include/TArtCanvasManager.hh:33:39: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   static void SaveAs(char* filename = "", Option_t* option = "");
+                                       ^~
+In file included from src/TArtSimpleFunction.cc:4:
+include/TArtCanvasManager.hh:33:39: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   static void SaveAs(char* filename = "", Option_t* option = "");
+                                       ^~
+In file included from src/TArtAlias.cc:2:
+include/TArtAlias.hh:203:54: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+ void print(char* filename = "", Option_t* option = "");
+                                                      ^
+In file included from src/TArtAlias.cc:5:
+include/TArtCanvasManager.hh:33:39: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   static void SaveAs(char* filename = "", Option_t* option = "");
+                                       ^~
+src/TArtAlias.cc: 関数 ‘int hid()’ 内:
+src/TArtAlias.cc:34:48: 警告: 非 void を戻す関数内に return 文がありません [-Wreturn-type]
+ int hid(){if(gH1) TArtHistManager::FindId(gH1);}
+                                                ^
+src/TArtSimpleFunction.cc: 静的メンバ関数 ‘static void TArtSimpleFunction::DrawDumb1D(TH1*, TString)’ 内:
+src/TArtSimpleFunction.cc:1909:10: 警告: unused variable ‘ko_log’ [-Wunused-variable]
+   Bool_t ko_log = o.Contains("log",TString::kIgnoreCase);
+          ^~~~~~
+/bin/sh ../../libtool  --tag=CXX   --mode=link g++  -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic  -o libananadeko.la -rpath /usr/local/lib  ananadeko_dict.lo src/TArtAlias.o src/TArtSimpleFunction.o src/TArtExec.o src/TArtObjLinkManager.o src/TArtCanvasManager.o src/TArtGlobal.o src/TArtHistManager.o src/TArtTreeManager.o 
+
+*** Warning: Linking the shared library libananadeko.la against the non-libtool
+*** objects  src/TArtAlias.o src/TArtSimpleFunction.o src/TArtExec.o src/TArtObjLinkManager.o src/TArtCanvasManager.o src/TArtGlobal.o src/TArtHistManager.o src/TArtTreeManager.o is not portable!
+libtool: link: rm -fr  .libs/libananadeko.la .libs/libananadeko.lai .libs/libananadeko.so .libs/libananadeko.so.0 .libs/libananadeko.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/ananadeko_dict.o  src/TArtAlias.o src/TArtSimpleFunction.o src/TArtExec.o src/TArtObjLinkManager.o src/TArtCanvasManager.o src/TArtGlobal.o src/TArtHistManager.o src/TArtTreeManager.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -pthread -m64 -g -pthread -pthread   -pthread -Wl,-soname -Wl,libananadeko.so.0 -o .libs/libananadeko.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libananadeko.so.0" && ln -s "libananadeko.so.0.0.0" "libananadeko.so.0")
+libtool: link: (cd ".libs" && rm -f "libananadeko.so" && ln -s "libananadeko.so.0.0.0" "libananadeko.so")
+libtool: link: ( cd ".libs" && rm -f "libananadeko.la" && ln -s "../libananadeko.la" "libananadeko.la" )
+make[2]: ディレクトリ '/home/quser/src/anaroot/sources/Nadeko' から出ます
+Making all in AnaLoop
+make[2]: ディレクトリ '/home/quser/src/anaroot/sources/AnaLoop' に入ります
+Making all in Core
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/AnaLoop/Core' に入ります
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TAlEncHist.o src/TAlEncHist.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TAlEncBranch.o src/TAlEncBranch.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TArtAnaLoop.o src/TArtAnaLoop.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TAlRawDataExample.o src/TAlRawDataExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TArtAnaLoopManager.o src/TArtAnaLoopManager.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TAlEncSub.o src/TAlEncSub.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TArtAnaClock.o src/TArtAnaClock.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TArtAnaFile.o src/TArtAnaFile.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TAlEncStop.o src/TAlEncStop.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TAlEncFillTree.o src/TAlEncFillTree.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TAlEncGate.o src/TAlEncGate.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include   -c -o src/TAlEncPrint.o src/TAlEncPrint.cc
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++  -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../../Core/include -I../../Nadeko/include -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic -o libanaloop.la -rpath /usr/local/lib  analoop_dict.lo src/TAlEncHist.o src/TAlEncBranch.o src/TArtAnaLoop.o src/TAlRawDataExample.o src/TArtAnaLoopManager.o src/TAlEncSub.o src/TArtAnaClock.o src/TArtAnaFile.o src/TAlEncStop.o src/TAlEncFillTree.o src/TAlEncGate.o src/TAlEncPrint.o 
+
+*** Warning: Linking the shared library libanaloop.la against the non-libtool
+*** objects  src/TAlEncHist.o src/TAlEncBranch.o src/TArtAnaLoop.o src/TAlRawDataExample.o src/TArtAnaLoopManager.o src/TAlEncSub.o src/TArtAnaClock.o src/TArtAnaFile.o src/TAlEncStop.o src/TAlEncFillTree.o src/TAlEncGate.o src/TAlEncPrint.o is not portable!
+libtool: link: rm -fr  .libs/libanaloop.la .libs/libanaloop.lai .libs/libanaloop.so .libs/libanaloop.so.0 .libs/libanaloop.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/analoop_dict.o  src/TAlEncHist.o src/TAlEncBranch.o src/TArtAnaLoop.o src/TAlRawDataExample.o src/TArtAnaLoopManager.o src/TAlEncSub.o src/TArtAnaClock.o src/TArtAnaFile.o src/TAlEncStop.o src/TAlEncFillTree.o src/TAlEncGate.o src/TAlEncPrint.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -pthread -m64 -g -pthread -pthread   -pthread -Wl,-soname -Wl,libanaloop.so.0 -o .libs/libanaloop.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanaloop.so.0" && ln -s "libanaloop.so.0.0.0" "libanaloop.so.0")
+libtool: link: (cd ".libs" && rm -f "libanaloop.so" && ln -s "libanaloop.so.0.0.0" "libanaloop.so")
+libtool: link: ( cd ".libs" && rm -f "libanaloop.la" && ln -s "../libanaloop.la" "libanaloop.la" )
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/AnaLoop/Core' から出ます
+Making all in Example
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/AnaLoop/Example' に入ります
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include   -c -o src/TAlSAMURAIHODExample.o src/TAlSAMURAIHODExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include   -c -o src/TAlGeExample.o src/TAlGeExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include   -c -o src/TAlBigRIPSExample.o src/TAlBigRIPSExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include   -c -o src/TAlDALIExample.o src/TAlDALIExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include   -c -o src/TAlWINDSExample.o src/TAlWINDSExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include   -c -o src/TAlSAMURAIExample.o src/TAlSAMURAIExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include   -c -o src/TAlSAMURAIDCExample.o src/TAlSAMURAIDCExample.cc
+In file included from src/TAlGeExample.cc:1:
+include/TAlGeExample.hh: コンストラクタ ‘TAlGeExample::TAlGeExample()’ 内:
+include/TAlGeExample.hh:35:16: 警告: ‘TAlGeExample::calibge’ will be initialized after [-Wreorder]
+   TArtCalibGe *calibge;
+                ^~~~~~~
+include/TAlGeExample.hh:26:10: 警告:   ‘TTree* TAlGeExample::tree’ [-Wreorder]
+   TTree* tree;
+          ^~~~
+src/TAlGeExample.cc:17:1: 警告:   when initialized here [-Wreorder]
+ TAlGeExample::TAlGeExample()
+ ^~~~~~~~~~~~
+src/TAlSAMURAIHODExample.cc: メンバ関数 ‘virtual void TAlSAMURAIHODExample::Calculate()’ 内:
+src/TAlSAMURAIHODExample.cc:71:9: 警告: 変数 ‘hodqmaxch’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Int_t hodqmaxch = -1;
+         ^~~~~~~~~
+src/TAlSAMURAIHODExample.cc:72:9: 警告: 変数 ‘hodqmaxtdc’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Int_t hodqmaxtdc = -1;
+         ^~~~~~~~~~
+In file included from src/TAlDALIExample.cc:1:
+include/TAlDALIExample.hh: コンストラクタ ‘TAlDALIExample::TAlDALIExample()’ 内:
+include/TAlDALIExample.hh:34:18: 警告: ‘TAlDALIExample::calibdali’ will be initialized after [-Wreorder]
+   TArtCalibDALI *calibdali;
+                  ^~~~~~~~~
+include/TAlDALIExample.hh:25:10: 警告:   ‘TTree* TAlDALIExample::tree’ [-Wreorder]
+   TTree* tree;
+          ^~~~
+src/TAlDALIExample.cc:18:1: 警告:   when initialized here [-Wreorder]
+ TAlDALIExample::TAlDALIExample()
+ ^~~~~~~~~~~~~~
+src/TAlWINDSExample.cc: メンバ関数 ‘virtual void TAlWINDSExample::Calculate()’ 内:
+src/TAlWINDSExample.cc:70:9: 警告: 変数 ‘windsqmaxch’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Int_t windsqmaxch = -1;
+         ^~~~~~~~~~~
+src/TAlWINDSExample.cc:71:9: 警告: 変数 ‘windsqmaxtdc’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Int_t windsqmaxtdc = -1;
+         ^~~~~~~~~~~~
+src/TAlSAMURAIDCExample.cc: メンバ関数 ‘virtual void TAlSAMURAIDCExample::Calculate()’ 内:
+src/TAlSAMURAIDCExample.cc:418:5: 警告: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+     if(TMath::Abs(bpc_fch[0] - 16) <= 16)
+     ^~
+src/TAlSAMURAIDCExample.cc:420:7: 備考: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       if(bpc_fch[0] == bpc_fch[1] && TMath::Abs(bpc_fch[0] - 16) <= 16){
+       ^~
+src/TAlSAMURAIDCExample.cc:339:12: 警告: 変数 ‘bestfdc2x’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Double_t bestfdc2x=-9999, bestfdc2a=-9999, bestfdc2y=-9999, bestfdc2b=-9999;
+            ^~~~~~~~~
+src/TAlSAMURAIDCExample.cc:339:29: 警告: 変数 ‘bestfdc2a’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Double_t bestfdc2x=-9999, bestfdc2a=-9999, bestfdc2y=-9999, bestfdc2b=-9999;
+                             ^~~~~~~~~
+src/TAlSAMURAIDCExample.cc:339:46: 警告: 変数 ‘bestfdc2y’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Double_t bestfdc2x=-9999, bestfdc2a=-9999, bestfdc2y=-9999, bestfdc2b=-9999;
+                                              ^~~~~~~~~
+src/TAlSAMURAIDCExample.cc:339:63: 警告: 変数 ‘bestfdc2b’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Double_t bestfdc2x=-9999, bestfdc2a=-9999, bestfdc2y=-9999, bestfdc2b=-9999;
+                                                               ^~~~~~~~~
+src/TAlSAMURAIExample.cc: メンバ関数 ‘virtual void TAlSAMURAIExample::Calculate()’ 内:
+src/TAlSAMURAIExample.cc:183:13: 警告: unused variable ‘ndf’ [-Wunused-variable]
+       Int_t ndf = trk->GetNDF();
+             ^~~
+src/TAlSAMURAIExample.cc:220:13: 警告: unused variable ‘ndf’ [-Wunused-variable]
+       Int_t ndf = trk->GetNDF();
+             ^~~
+src/TAlSAMURAIExample.cc:255:13: 警告: unused variable ‘ndf’ [-Wunused-variable]
+       Int_t ndf = trk->GetNDF();
+             ^~~
+src/TAlSAMURAIExample.cc:275:13: 警告: unused variable ‘ndf’ [-Wunused-variable]
+       Int_t ndf = trk->GetNDF();
+             ^~~
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++  -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall  -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic -o libanaloopexample.la -rpath /usr/local/lib  analoopexample_dict.lo src/TAlSAMURAIHODExample.o src/TAlGeExample.o src/TAlBigRIPSExample.o src/TAlDALIExample.o src/TAlWINDSExample.o src/TAlSAMURAIExample.o src/TAlSAMURAIDCExample.o 
+
+*** Warning: Linking the shared library libanaloopexample.la against the non-libtool
+*** objects  src/TAlSAMURAIHODExample.o src/TAlGeExample.o src/TAlBigRIPSExample.o src/TAlDALIExample.o src/TAlWINDSExample.o src/TAlSAMURAIExample.o src/TAlSAMURAIDCExample.o is not portable!
+libtool: link: rm -fr  .libs/libanaloopexample.la .libs/libanaloopexample.lai .libs/libanaloopexample.so .libs/libanaloopexample.so.0 .libs/libanaloopexample.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/analoopexample_dict.o  src/TAlSAMURAIHODExample.o src/TAlGeExample.o src/TAlBigRIPSExample.o src/TAlDALIExample.o src/TAlWINDSExample.o src/TAlSAMURAIExample.o src/TAlSAMURAIDCExample.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -pthread -m64 -g -pthread -pthread   -pthread -Wl,-soname -Wl,libanaloopexample.so.0 -o .libs/libanaloopexample.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanaloopexample.so.0" && ln -s "libanaloopexample.so.0.0.0" "libanaloopexample.so.0")
+libtool: link: (cd ".libs" && rm -f "libanaloopexample.so" && ln -s "libanaloopexample.so.0.0.0" "libanaloopexample.so")
+libtool: link: ( cd ".libs" && rm -f "libanaloopexample.la" && ln -s "../libanaloopexample.la" "libanaloopexample.la" )
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/AnaLoop/Example' から出ます
+Making all in EncExample
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/AnaLoop/EncExample' に入ります
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncPlasticExample.o src/TAlEncPlasticExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncSAMURAITZeroExample.o src/TAlEncSAMURAITZeroExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncSAMURAIPlaExample.o src/TAlEncSAMURAIPlaExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncSAMURAINeutronExample.o src/TAlEncSAMURAINeutronExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncCATANAExample.o src/TAlEncCATANAExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncRPTOFExample.o src/TAlEncRPTOFExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncWINDSExample.o src/TAlEncWINDSExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncGlobalExample.o src/TAlEncGlobalExample.cc
+In file included from src/TAlEncCATANAExample.cc:14:
+../../Reconstruction/CATANA/include/TArtCATANACsI.hh: コンストラクタ ‘TArtCATANACsI::TArtCATANACsI()’ 内:
+../../Reconstruction/CATANA/include/TArtCATANACsI.hh:59:12: 警告: ‘TArtCATANACsI::fTimeOffseted’ will be initialized after [-Wreorder]
+   Double_t fTimeOffseted;
+            ^~~~~~~~~~~~~
+../../Reconstruction/CATANA/include/TArtCATANACsI.hh:52:15: 警告:   ‘Int_t TArtCATANACsI::fTDCSub’ [-Wreorder]
+   Int_t fTRef,fTDCSub;
+               ^~~~~~~
+../../Reconstruction/CATANA/include/TArtCATANACsI.hh:10:2: 警告:   when initialized here [-Wreorder]
+  TArtCATANACsI()
+  ^~~~~~~~~~~~~
+src/TAlEncSAMURAIPlaExample.cc: メンバ関数 ‘virtual bool TAlEncSAMURAIPlaExample::Calculate()’ 内:
+src/TAlEncSAMURAIPlaExample.cc:131:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+     if(pla->GetTLRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:133:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+        pla->GetTRRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:169:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+     if(pla->GetTLRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:171:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+        pla->GetTRRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:208:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+     if(pla->GetTLRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:210:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+        pla->GetTRRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:248:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+     if(pla->GetTLRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:250:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+        pla->GetTRRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:286:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+     if(pla->GetTLRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:288:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+        pla->GetTRRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:324:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+     if(pla->GetTLRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:326:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+        pla->GetTRRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:362:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+     if(pla->GetTLRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:364:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+        pla->GetTRRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:400:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+     if(pla->GetTLRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:402:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+        pla->GetTRRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:438:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+     if(pla->GetTLRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:440:38: 警告: ‘^’ の被演算子内にある計算の周りに小括弧を付けることを推奨します [-Wparentheses]
+        pla->GetTRRaw() < /*4095*/2^16-1 &&
+                                    ~~^~
+src/TAlEncSAMURAIPlaExample.cc:74:12: 警告: unused variable ‘f5pla2_tl’ [-Wunused-variable]
+   Double_t f5pla2_tl = -9999;
+            ^~~~~~~~~
+src/TAlEncSAMURAIPlaExample.cc:75:12: 警告: unused variable ‘f5pla2_tr’ [-Wunused-variable]
+   Double_t f5pla2_tr = -9999;
+            ^~~~~~~~~
+src/TAlEncSAMURAIPlaExample.cc:76:12: 警告: unused variable ‘f5pla2_t’ [-Wunused-variable]
+   Double_t f5pla2_t = -9999;
+            ^~~~~~~~
+src/TAlEncSAMURAIPlaExample.cc:77:12: 警告: unused variable ‘f5pla2_dt’ [-Wunused-variable]
+   Double_t f5pla2_dt = -9999;
+            ^~~~~~~~~
+src/TAlEncSAMURAIPlaExample.cc:78:12: 警告: unused variable ‘f5pla2_dtcal’ [-Wunused-variable]
+   Double_t f5pla2_dtcal = -9999;
+            ^~~~~~~~~~~~
+src/TAlEncSAMURAIPlaExample.cc:79:12: 警告: unused variable ‘f5pla2_dtslw’ [-Wunused-variable]
+   Double_t f5pla2_dtslw = -9999;
+            ^~~~~~~~~~~~
+src/TAlEncSAMURAIPlaExample.cc:80:12: 警告: unused variable ‘f5pla2_q’ [-Wunused-variable]
+   Double_t f5pla2_q = -9999;
+            ^~~~~~~~
+src/TAlEncSAMURAIPlaExample.cc:81:12: 警告: unused variable ‘f5pla2_lnq’ [-Wunused-variable]
+   Double_t f5pla2_lnq = -9999;
+            ^~~~~~~~~~
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncSAMURAIICExample.o src/TAlEncSAMURAIICExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncMatrixExample.o src/TAlEncMatrixExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncPIDExample.o src/TAlEncPIDExample.cc
+src/TAlEncRPTOFExample.cc: メンバ関数 ‘virtual bool TAlEncRPTOFExample::Calculate()’ 内:
+src/TAlEncRPTOFExample.cc:67:14: 警告: unused variable ‘dtslw’ [-Wunused-variable]
+     Double_t dtslw=-9999;
+              ^~~~~
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncRawDataExample.o src/TAlEncRawDataExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncSAMURAIDCExample.o src/TAlEncSAMURAIDCExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncExample.o src/TAlEncExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncRPDCExample.o src/TAlEncRPDCExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncPPACExample.o src/TAlEncPPACExample.cc
+src/TAlEncSAMURAIICExample.cc: メンバ関数 ‘virtual bool TAlEncSAMURAIICExample::Calculate()’ 内:
+src/TAlEncSAMURAIICExample.cc:69:62: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+     TArtIC *ic = (TArtIC *)TArtUtil::FindDataObject(ics,"ICB");
+                                                              ^
+src/TAlEncPIDExample.cc: メンバ関数 ‘virtual void TAlEncPIDExample::Construct()’ 内:
+src/TAlEncPIDExample.cc:39:62: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   tof_f3pl_f5pl2 = (TArtTOF*)recotof->FindTOF("F3pl","F5pl-2");
+                                                              ^
+src/TAlEncPIDExample.cc:39:62: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:40:59: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   tof_f3pl_f7pl = (TArtTOF*)recotof->FindTOF("F3pl","F7pl");
+                                                           ^
+src/TAlEncPIDExample.cc:40:59: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:41:59: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   tof_f3pl_f8pl = (TArtTOF*)recotof->FindTOF("F3pl","F8pl");
+                                                           ^
+src/TAlEncPIDExample.cc:41:59: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:42:62: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   tof_f5pl2_f7pl = (TArtTOF*)recotof->FindTOF("F5pl-2","F7pl");
+                                                              ^
+src/TAlEncPIDExample.cc:42:62: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:43:59: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   tof_f7pl_f8pl = (TArtTOF*)recotof->FindTOF("F7pl","F8pl");
+                                                           ^
+src/TAlEncPIDExample.cc:43:59: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:44:63: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   tof_f7pl_f11pl = (TArtTOF*)recotof->FindTOF("F7pl","F11pl-1");
+                                                               ^
+src/TAlEncPIDExample.cc:44:63: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:46:63: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   tof_f8pl_f11pl = (TArtTOF*)recotof->FindTOF("F8pl","F11pl-1");
+                                                               ^
+src/TAlEncPIDExample.cc:46:63: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:49:88: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   beam_rips3to5_ic7_beta3to5 = (TArtBeam*)recobeam->FindBeam(3,5,"F3pl","F5pl-2","F7IC");
+                                                                                        ^
+src/TAlEncPIDExample.cc:49:88: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:49:88: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:50:88: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   beam_rips5to7_ic7_beta5to7 = (TArtBeam*)recobeam->FindBeam(5,7,"F5pl-2","F7pl","F7IC");
+                                                                                        ^
+src/TAlEncPIDExample.cc:50:88: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:50:88: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:51:86: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   beam_rips3to5_ic7_beta3to7 = (TArtBeam*)recobeam->FindBeam(3,5,"F3pl","F7pl","F7IC");
+                                                                                      ^
+src/TAlEncPIDExample.cc:51:86: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:51:86: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:52:86: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   beam_rips5to7_ic7_beta3to7 = (TArtBeam*)recobeam->FindBeam(5,7,"F3pl","F7pl","F7IC");
+                                                                                      ^
+src/TAlEncPIDExample.cc:52:86: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:52:86: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:54:92: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   beam_rips8to9_ic11_beta8to11 = (TArtBeam*)recobeam->FindBeam(8,9,"F8pl","F11pl-1","F11IC");
+                                                                                            ^
+src/TAlEncPIDExample.cc:54:92: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:54:92: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:55:94: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   beam_rips9to11_ic11_beta8to11 = (TArtBeam*)recobeam->FindBeam(9,11,"F8pl","F11pl-1","F11IC");
+                                                                                              ^
+src/TAlEncPIDExample.cc:55:94: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:55:94: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:56:96: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   beam_rips10to11_ic11_beta7to11 = (TArtBeam*)recobeam->FindBeam(10,11,"F7pl","F11pl-1","F11IC");
+                                                                                                ^
+src/TAlEncPIDExample.cc:56:96: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:56:96: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:57:92: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   beam_rips8to9_ic11_beta7to11 = (TArtBeam*)recobeam->FindBeam(8,9,"F7pl","F11pl-1","F11IC");
+                                                                                            ^
+src/TAlEncPIDExample.cc:57:92: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:57:92: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:58:94: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+   beam_rips9to11_ic11_beta7to11 = (TArtBeam*)recobeam->FindBeam(9,11,"F7pl","F11pl-1","F11IC");
+                                                                                              ^
+src/TAlEncPIDExample.cc:58:94: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncPIDExample.cc:58:94: 警告: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+src/TAlEncRawDataExample.cc: メンバ関数 ‘virtual bool TAlEncRawDataExample::Calculate()’ 内:
+src/TAlEncRawDataExample.cc:54:11: 警告: unused variable ‘edge’ [-Wunused-variable]
+       int edge = (int)d->GetEdge();
+           ^~~~
+src/TAlEncRawDataExample.cc:42:9: 警告: unused variable ‘efn’ [-Wunused-variable]
+     int efn = (int)seg->GetAddress();
+         ^~~
+src/TAlEncRawDataExample.cc:37:7: 警告: unused variable ‘eventnum’ [-Wunused-variable]
+   int eventnum = rawevent->GetEventNumber();
+       ^~~~~~~~
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncNeuLANDExample.o src/TAlEncNeuLANDExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncNEBULAHPCExample.o src/TAlEncNEBULAHPCExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncNEBULAExample.o src/TAlEncNEBULAExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncSAMURAIHODExample.o src/TAlEncSAMURAIHODExample.cc
+In file included from src/TAlEncSAMURAIDCExample.cc:1:
+include/TAlEncSAMURAIDCExample.hh: コンストラクタ ‘TAlEncSAMURAIDCExample::TAlEncSAMURAIDCExample()’ 内:
+include/TAlEncSAMURAIDCExample.hh:76:24: 警告: ‘TAlEncSAMURAIDCExample::fCalibFDC2Track’ will be initialized after [-Wreorder]
+   TArtCalibFDC2Track * fCalibFDC2Track;
+                        ^~~~~~~~~~~~~~~
+include/TAlEncSAMURAIDCExample.hh:68:22: 警告:   ‘TArtCalibFDC1Hit* TAlEncSAMURAIDCExample::fCalibFDC1Hit’ [-Wreorder]
+   TArtCalibFDC1Hit * fCalibFDC1Hit;
+                      ^~~~~~~~~~~~~
+src/TAlEncSAMURAIDCExample.cc:5:1: 警告:   when initialized here [-Wreorder]
+ TAlEncSAMURAIDCExample::TAlEncSAMURAIDCExample()
+ ^~~~~~~~~~~~~~~~~~~~~~
+In file included from src/TAlEncSAMURAIDCExample.cc:1:
+include/TAlEncSAMURAIDCExample.hh:75:24: 警告: ‘TAlEncSAMURAIDCExample::fCalibFDC1Track’ will be initialized after [-Wreorder]
+   TArtCalibFDC1Track * fCalibFDC1Track;
+                        ^~~~~~~~~~~~~~~
+include/TAlEncSAMURAIDCExample.hh:70:21: 警告:   ‘TArtCalibPDCHit* TAlEncSAMURAIDCExample::fCalibPDCHit’ [-Wreorder]
+   TArtCalibPDCHit * fCalibPDCHit;
+                     ^~~~~~~~~~~~
+src/TAlEncSAMURAIDCExample.cc:5:1: 警告:   when initialized here [-Wreorder]
+ TAlEncSAMURAIDCExample::TAlEncSAMURAIDCExample()
+ ^~~~~~~~~~~~~~~~~~~~~~
+src/TAlEncSAMURAIDCExample.cc: メンバ関数 ‘virtual bool TAlEncSAMURAIDCExample::Calculate()’ 内:
+src/TAlEncSAMURAIDCExample.cc:304:15: 警告: unused variable ‘ndf’ [-Wunused-variable]
+       Int_t   ndf  = trk->GetNDF();
+               ^~~
+src/TAlEncSAMURAIDCExample.cc:325:15: 警告: unused variable ‘ndf’ [-Wunused-variable]
+       Int_t   ndf  = trk->GetNDF();
+               ^~~
+src/TAlEncSAMURAIDCExample.cc:347:15: 警告: unused variable ‘ndf’ [-Wunused-variable]
+       Int_t   ndf  = trk->GetNDF();
+               ^~~
+src/TAlEncSAMURAIDCExample.cc:377:12: 警告: 変数 ‘focx’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Double_t focx = NAN;
+            ^~~~
+src/TAlEncSAMURAIDCExample.cc:378:12: 警告: 変数 ‘focy’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Double_t focy = NAN;
+            ^~~~
+src/TAlEncSAMURAIDCExample.cc:379:12: 警告: 変数 ‘foca’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Double_t foca = NAN;
+            ^~~~
+src/TAlEncSAMURAIDCExample.cc:380:12: 警告: 変数 ‘focb’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   Double_t focb = NAN;
+            ^~~~
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncHIMEExample.o src/TAlEncHIMEExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncESPRIExample.o src/TAlEncESPRIExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncSAMURAITEDExample.o src/TAlEncSAMURAITEDExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncSAMURAIFrag.o src/TAlEncSAMURAIFrag.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncNINJAExample.o src/TAlEncNINJAExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncSILICONSExample.o src/TAlEncSILICONSExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncDALIExample.o src/TAlEncDALIExample.cc
+g++ -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include    -c -o src/TAlEncICExample.o src/TAlEncICExample.cc
+In file included from include/TAlEncESPRIExample.hh:22,
+                 from src/TAlEncESPRIExample.cc:1:
+../../Reconstruction/ESPRI/include/TArtBDC.hh: コンストラクタ ‘TArtBDC::TArtBDC()’ 内:
+../../Reconstruction/ESPRI/include/TArtBDC.hh:74:12: 警告: ‘TArtBDC::fCHI’ will be initialized after [-Wreorder]
+   Double_t fCHI; // best chi-square
+            ^~~~
+../../Reconstruction/ESPRI/include/TArtBDC.hh:68:9: 警告:   ‘Int_t TArtBDC::layer’ [-Wreorder]
+   Int_t layer; // 1:UP 2:DW -1:No GOOD Drf
+         ^~~~~
+../../Reconstruction/ESPRI/include/TArtBDC.hh:10:3: 警告:   when initialized here [-Wreorder]
+   TArtBDC()
+   ^~~~~~~
+In file included from include/TAlEncESPRIExample.hh:23,
+                 from src/TAlEncESPRIExample.cc:1:
+../../Reconstruction/ESPRI/include/TArtBLD.hh: コンストラクタ ‘TArtBLD::TArtBLD()’ 内:
+../../Reconstruction/ESPRI/include/TArtBLD.hh:74:12: 警告: ‘TArtBLD::fCHI’ will be initialized after [-Wreorder]
+   Double_t fCHI; // best chi-square
+            ^~~~
+../../Reconstruction/ESPRI/include/TArtBLD.hh:68:9: 警告:   ‘Int_t TArtBLD::layer’ [-Wreorder]
+   Int_t layer; // 1:UP 2:DW -1:No GOOD Drf
+         ^~~~~
+../../Reconstruction/ESPRI/include/TArtBLD.hh:10:3: 警告:   when initialized here [-Wreorder]
+   TArtBLD()
+   ^~~~~~~
+In file included from include/TAlEncESPRIExample.hh:38,
+                 from src/TAlEncESPRIExample.cc:1:
+../../Reconstruction/ESPRI/include/TArtRDC.hh: コンストラクタ ‘TArtRDC::TArtRDC()’ 内:
+../../Reconstruction/ESPRI/include/TArtRDC.hh:60:12: 警告: ‘TArtRDC::fCHI’ will be initialized after [-Wreorder]
+   Double_t fCHI; // best chi-square
+            ^~~~
+../../Reconstruction/ESPRI/include/TArtRDC.hh:54:9: 警告:   ‘Int_t TArtRDC::layer’ [-Wreorder]
+   Int_t layer; // 1:UP 2:DW -1:No GOOD Hit
+         ^~~~~
+../../Reconstruction/ESPRI/include/TArtRDC.hh:10:3: 警告:   when initialized here [-Wreorder]
+   TArtRDC()
+   ^~~~~~~
+In file included from src/TAlEncESPRIExample.cc:1:
+include/TAlEncESPRIExample.hh: コンストラクタ ‘TAlEncESPRIExample::TAlEncESPRIExample()’ 内:
+include/TAlEncESPRIExample.hh:70:23: 警告: ‘TAlEncESPRIExample::ESPRIUserPara’ will be initialized after [-Wreorder]
+   TArtUserParameters *ESPRIUserPara ;
+                       ^~~~~~~~~~~~~
+include/TAlEncESPRIExample.hh:69:24: 警告:   ‘TArtESPRIParameters* TAlEncESPRIExample::ESPRIparameters’ [-Wreorder]
+   TArtESPRIParameters* ESPRIparameters;
+                        ^~~~~~~~~~~~~~~
+src/TAlEncESPRIExample.cc:5:1: 警告:   when initialized here [-Wreorder]
+ TAlEncESPRIExample::TAlEncESPRIExample()
+ ^~~~~~~~~~~~~~~~~~
+src/TAlEncESPRIExample.cc:9:27: 警告: list-initializer for non-class type must not be parenthesized
+     PlaMergeID({2,2,12,12})
+                           ^
+src/TAlEncESPRIExample.cc:9:27: 警告: list-initializer for non-class type must not be parenthesized
+src/TAlEncESPRIExample.cc: メンバ関数 ‘virtual bool TAlEncESPRIExample::Calculate()’ 内:
+src/TAlEncESPRIExample.cc:110:17: 警告: unused variable ‘info’ [-Wunused-variable]
+   TClonesArray *info = (TClonesArray*)sman->FindDataContainer("EventInfo");
+                 ^~~~
+/bin/sh ../../../libtool  --tag=CXX   --mode=link g++  -fPIC -Iinclude -pthread -std=c++11 -m64 -I/opt/root_6.16.0/include -g -Wall -I../Core/include -I../../Core/include -I../../Nadeko/include -I../../Reconstruction/WINDS/include -I../../Reconstruction/DALI/include -I../../Reconstruction/MINOS/include -I../../Reconstruction/BigRIPS/include -I../../Reconstruction/CATANA/include -I../../Reconstruction/SILICONS/include -I../../Reconstruction/SAMURAI/include -I../../Reconstruction/ESPRI/include  -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -pthread -lm -ldl -rdynamic -o libanaloopencexample.la -rpath /usr/local/lib  analoopencexample_dict.lo src/TAlEncPlasticExample.o src/TAlEncSAMURAITZeroExample.o src/TAlEncSAMURAIPlaExample.o src/TAlEncSAMURAINeutronExample.o src/TAlEncCATANAExample.o src/TAlEncRPTOFExample.o src/TAlEncWINDSExample.o src/TAlEncGlobalExample.o src/TAlEncSAMURAIICExample.o src/TAlEncMatrixExample.o src/TAlEncPIDExample.o src/TAlEncRawDataExample.o src/TAlEncSAMURAIDCExample.o src/TAlEncExample.o src/TAlEncRPDCExample.o src/TAlEncPPACExample.o src/TAlEncNeuLANDExample.o src/TAlEncNEBULAHPCExample.o src/TAlEncNEBULAExample.o src/TAlEncSAMURAIHODExample.o src/TAlEncHIMEExample.o src/TAlEncESPRIExample.o src/TAlEncSAMURAITEDExample.o src/TAlEncSAMURAIFrag.o src/TAlEncNINJAExample.o src/TAlEncSILICONSExample.o src/TAlEncDALIExample.o src/TAlEncICExample.o 
+
+*** Warning: Linking the shared library libanaloopencexample.la against the non-libtool
+*** objects  src/TAlEncPlasticExample.o src/TAlEncSAMURAITZeroExample.o src/TAlEncSAMURAIPlaExample.o src/TAlEncSAMURAINeutronExample.o src/TAlEncCATANAExample.o src/TAlEncRPTOFExample.o src/TAlEncWINDSExample.o src/TAlEncGlobalExample.o src/TAlEncSAMURAIICExample.o src/TAlEncMatrixExample.o src/TAlEncPIDExample.o src/TAlEncRawDataExample.o src/TAlEncSAMURAIDCExample.o src/TAlEncExample.o src/TAlEncRPDCExample.o src/TAlEncPPACExample.o src/TAlEncNeuLANDExample.o src/TAlEncNEBULAHPCExample.o src/TAlEncNEBULAExample.o src/TAlEncSAMURAIHODExample.o src/TAlEncHIMEExample.o src/TAlEncESPRIExample.o src/TAlEncSAMURAITEDExample.o src/TAlEncSAMURAIFrag.o src/TAlEncNINJAExample.o src/TAlEncSILICONSExample.o src/TAlEncDALIExample.o src/TAlEncICExample.o is not portable!
+libtool: link: rm -fr  .libs/libanaloopencexample.la .libs/libanaloopencexample.lai .libs/libanaloopencexample.so .libs/libanaloopencexample.so.0 .libs/libanaloopencexample.so.0.0.0
+libtool: link: g++  -fPIC -DPIC -shared -nostdlib /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/8/crtbeginS.o  .libs/analoopencexample_dict.o  src/TAlEncPlasticExample.o src/TAlEncSAMURAITZeroExample.o src/TAlEncSAMURAIPlaExample.o src/TAlEncSAMURAINeutronExample.o src/TAlEncCATANAExample.o src/TAlEncRPTOFExample.o src/TAlEncWINDSExample.o src/TAlEncGlobalExample.o src/TAlEncSAMURAIICExample.o src/TAlEncMatrixExample.o src/TAlEncPIDExample.o src/TAlEncRawDataExample.o src/TAlEncSAMURAIDCExample.o src/TAlEncExample.o src/TAlEncRPDCExample.o src/TAlEncPPACExample.o src/TAlEncNeuLANDExample.o src/TAlEncNEBULAHPCExample.o src/TAlEncNEBULAExample.o src/TAlEncSAMURAIHODExample.o src/TAlEncHIMEExample.o src/TAlEncESPRIExample.o src/TAlEncSAMURAITEDExample.o src/TAlEncSAMURAIFrag.o src/TAlEncNINJAExample.o src/TAlEncSILICONSExample.o src/TAlEncDALIExample.o src/TAlEncICExample.o   -L/opt/root_6.16.0/lib -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl -L/usr/lib/gcc/x86_64-redhat-linux/8 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/8/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/x86_64-redhat-linux/8/crtendS.o /usr/lib/gcc/x86_64-redhat-linux/8/../../../../lib64/crtn.o  -pthread -m64 -g -pthread -pthread   -pthread -Wl,-soname -Wl,libanaloopencexample.so.0 -o .libs/libanaloopencexample.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanaloopencexample.so.0" && ln -s "libanaloopencexample.so.0.0.0" "libanaloopencexample.so.0")
+libtool: link: (cd ".libs" && rm -f "libanaloopencexample.so" && ln -s "libanaloopencexample.so.0.0.0" "libanaloopencexample.so")
+libtool: link: ( cd ".libs" && rm -f "libanaloopencexample.la" && ln -s "../libanaloopencexample.la" "libanaloopencexample.la" )
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/AnaLoop/EncExample' から出ます
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/AnaLoop' に入ります
+make[3]: 'all-am' に対して行うべき事はありません.
+make[3]: ディレクトリ '/home/quser/src/anaroot/sources/AnaLoop' から出ます
+make[2]: ディレクトリ '/home/quser/src/anaroot/sources/AnaLoop' から出ます
+make[2]: ディレクトリ '/home/quser/src/anaroot/sources' に入ります
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2   -o libanaroot.la -rpath /usr/local/lib  AnaLoop/Core/libanaloop.la AnaLoop/Example/libanaloopexample.la AnaLoop/EncExample/libanaloopencexample.la Core/libanacore.la Nadeko/libananadeko.la Reconstruction/BigRIPS/libanabrips.la Reconstruction/DALI/libanadali.la Reconstruction/WINDS/libanawinds.la Reconstruction/ESPRI/libanaespri.la Reconstruction/SAMURAI/libanasamurai.la Reconstruction/SILICONS/libanasilicons.la Reconstruction/CATANA/libanacatana.la  
+libtool: link: gcc -shared  -fPIC -DPIC   -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/AnaLoop/Core/.libs -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/AnaLoop/Example/.libs -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/AnaLoop/EncExample/.libs -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/Core/.libs -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/Nadeko/.libs -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/Reconstruction/BigRIPS/.libs -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/Reconstruction/DALI/.libs -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/Reconstruction/WINDS/.libs -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/Reconstruction/ESPRI/.libs -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/Reconstruction/SAMURAI/.libs -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/Reconstruction/SILICONS/.libs -Wl,-rpath -Wl,/home/quser/src/anaroot/sources/Reconstruction/CATANA/.libs AnaLoop/Core/.libs/libanaloop.so -L/opt/root_6.16.0/lib AnaLoop/Example/.libs/libanaloopexample.so AnaLoop/EncExample/.libs/libanaloopencexample.so Core/.libs/libanacore.so Nadeko/.libs/libananadeko.so Reconstruction/BigRIPS/.libs/libanabrips.so Reconstruction/DALI/.libs/libanadali.so Reconstruction/WINDS/.libs/libanawinds.so Reconstruction/ESPRI/.libs/libanaespri.so Reconstruction/SAMURAI/.libs/libanasamurai.so Reconstruction/SILICONS/.libs/libanasilicons.so Reconstruction/CATANA/.libs/libanacatana.so -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl  -g -O2   -pthread -Wl,-soname -Wl,libanaroot.so.0 -o .libs/libanaroot.so.0.0.0
+libtool: link: (cd ".libs" && rm -f "libanaroot.so.0" && ln -s "libanaroot.so.0.0.0" "libanaroot.so.0")
+libtool: link: (cd ".libs" && rm -f "libanaroot.so" && ln -s "libanaroot.so.0.0.0" "libanaroot.so")
+libtool: link: ( cd ".libs" && rm -f "libanaroot.la" && ln -s "../libanaroot.la" "libanaroot.la" )
+make[2]: ディレクトリ '/home/quser/src/anaroot/sources' から出ます
+make[1]: ディレクトリ '/home/quser/src/anaroot/sources' から出ます
+make[1]: ディレクトリ '/home/quser/src/anaroot' に入ります
+make[1]: 'all-am' に対して行うべき事はありません.
+make[1]: ディレクトリ '/home/quser/src/anaroot' から出ます

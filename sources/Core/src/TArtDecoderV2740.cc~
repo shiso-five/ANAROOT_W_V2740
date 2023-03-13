@@ -1,0 +1,271 @@
+/*
+ * @file TArtDecoderV2740.cc
+ * S.Ogio 20230209
+ */
+#include "TArtDecoderV2740.hh"
+#include "TArtDecoderFactory.hh"
+#include "TArtCore.hh"
+#include "TMath.h"
+#include <stdio.h>
+#include <stdint.h>
+#include <inttypes.h>
+#include <iostream>
+#include <bitset>
+
+TArtDecoderV2740::TArtDecoderV2740()
+   : TArtDecoder(kID) {
+}
+TArtDecoderV2740::TArtDecoderV2740(const TArtDecoderV2740 &rhs) {
+}
+
+TArtDecoderV2740::~TArtDecoderV2740()
+{
+}
+
+TArtDecoder* TArtDecoderV2740::Instance()
+{
+   static TArtDecoderV2740 instance;
+   return &instance;
+}
+
+int TArtDecoderV2740::Decode(unsigned char* &buf, const unsigned int& size, TArtRawSegmentObject* rawseg){
+  uint64_t *evtData       = (uint64_t*) buf;
+  uint64_t evtBlockLength    = size/sizeof(uint64_t);  
+  uint64_t header0 = Permute2ManualFormat(evtData[0]);
+  uint64_t format = (header0>>60);
+  uint64_t totalSize = evtData[0]>>32; //[8 Byte]
+  uint64_t focusAddress=1; //[8 Byte]  
+
+#ifdef TARTDECODEV2740_DEBUG     
+  std::cout<<"format     = "<<std::hex<<format<<std::endl;
+  std::cout<<"evtData[0] = "<<std::hex<<std::setw(16)<<std::setfill('0')<<evtData[0]<<std::endl;  
+  std::cout<<"header0    = "<<std::hex<<std::setw(16)<<std::setfill('0')<<header0<<std::endl;
+  std::cout<<"totalSize  = "<<std::dec<<totalSize<<std::endl;  
+#endif
+  
+  if(format == 0x01){ //Common Trigger Mode, "scope"
+#ifdef TARTDECODEV2740_DEBUG   
+    for(uint64_t i=0;i<evtBlockLength;i++){
+      std::cout<<"before : "<<std::bitset<64>(evtData[i])<<std::endl;          
+      std::cout<<"after  : "<<std::bitset<64>(Permute2ManualFormat(evtData[i]))<<std::endl;     
+    }
+#endif
+    
+    uint64_t header1 = Permute2ManualFormat(evtData[1]);
+    uint64_t header2 = Permute2ManualFormat(evtData[2]);   
+
+    uint64_t triggerID         = (header0&0x00ffffff00000000)>>32;
+    uint64_t evtSize           = (header0&0x00000000ffffffff) * 8; //[Byte]
+    uint64_t headerSize        = 24; //[Byte]
+    uint64_t timeStamp         =  header1&0x0000ffffffffffff;
+    uint64_t chEnableMask      =  header2;
+    std::vector<int> chEnabled;
+    chEnabled.clear();
+    for(int i=0;i<NCH;i++){
+      uint64_t chtemp = 0x0000000000000001;
+      if(chEnableMask&(chtemp<<i)){
+	chEnabled.push_back(i);
+      }
+    }
+    uint64_t Nsampling         = (evtSize - headerSize) / ((uint64_t)chEnabled.size()) / 2;
+    uint64_t Nquart            = Nsampling/4;
+
+#ifdef TARTDECODEV2740_DEBUG   
+    std::cout<<"EvtBlockLength = "<<evtBlockLength<<std::endl;
+    std::cout<<"triggerID      = "<<triggerID     <<std::endl;
+    std::cout<<"evtSize        = "<<evtSize       <<std::endl;
+    std::cout<<"timeStamp      = "<<timeStamp     <<std::endl;
+    std::cout<<"chEnabled      = ";   
+    for(size_t i=0;i<chEnabled.size();i++){
+      std::cout<<chEnabled.at(i)<<" ";      
+    }
+    std::cout<<std::endl;
+    std::cout<<"Nsampling      = "<<Nsampling     <<std::endl;
+    std::cout<<"Nquart         = "<<Nquart        <<std::endl;
+#endif   
+
+    uint64_t timeBacket;
+    TArtRawV2740DataObject *rdata[NCH];
+    for(int i=0;i<NCH;i++){
+      rdata[i] = new TArtRawV2740DataObject(i);
+      rdata[i]->SetTimeStamp(timeStamp);
+      rdata[i]->SetFormat(format);
+    }
+
+    for(uint64_t i=0;i<Nquart;i++){
+      for(uint64_t j=0;j<chEnabled.size();j++){
+	for(uint64_t k=0; k<4;k++){
+///	  uint64_t samp = (Permute2ManualFormat(evtData[i+j+3])>>(4*4*k))&0x000000000000ffff; //[0-2^16]
+	 uint64_t samp = (Permute2ManualFormat(evtData[3+chEnabled.size()*i+j])>>(4*4*k))&0x000000000000ffff; //[0-2^16]	  
+	  timeBacket = 4*i + k;//[ch]
+
+	  rdata[chEnabled.at(j)]->AddVal(timeBacket, samp);
+	}
+      }
+    }
+
+    for(size_t i=0;i<chEnabled.size();i++){
+      rawseg->PutV2740Data(rdata[chEnabled.at(i)]);
+    }
+  }
+  else if(format == 0x02){ //Individual Trigger Mode, DPP-HOGE
+    
+    while(totalSize != focusAddress){
+      uint64_t header1 = Permute2ManualFormat(evtData[focusAddress]);
+      uint64_t header2 = Permute2ManualFormat(evtData[focusAddress+1]);
+      uint64_t extraWord = Permute2ManualFormat(evtData[focusAddress+2]);
+      focusAddress += 3;
+
+      uint8_t  channel           = (header1   & 0x7f00000000000000)>>56;
+      uint64_t timeStamp         =  header1   & 0x0000ffffffffffff;
+      uint16_t fineTimeStamp     = (header2   & 0x0000000003ff0000)>>16;
+      uint16_t energy            =  header2   & 0x000000000000ffff;
+      uint8_t  flagWaveform      = (header2   & 0x4000000000000000)>>60;
+      uint8_t  analogProbeInfo0  =  extraWord & 0x000000000000003f;
+      uint8_t  analogProbeInfo1  = (extraWord & 0x0000000000000fc0)>> 6;
+      uint8_t  digitalProbeInfo0 = (extraWord & 0x000000000000f000)>>12;
+      uint8_t  digitalProbeInfo1 = (extraWord & 0x00000000000f0000)>>16;
+      uint8_t  digitalProbeInfo2 = (extraWord & 0x0000000000f00000)>>20;
+      uint8_t  digitalProbeInfo3 = (extraWord & 0x000000000f000000)>>24;
+
+#ifdef TARTDECODEV2740_DEBUG     	      
+      std::cout<<"header1    = "<<std::hex<<std::setw(16)<<std::setfill('0')<<header1<<std::endl;
+      std::cout<<"channel = "<<std::dec<<(int)channel<<std::endl;
+      std::cout<<"TimeStamp = "<<timeStamp<<std::endl;
+      std::cout<<"header2    = "<<std::hex<<std::setw(16)<<std::setfill('0')<<header2<<std::endl;
+#endif
+      //      std::cout<<"TimeStamp1 = "<<timeStamp<<" energy1 = "<<std::dec<<energy<<" ";            
+
+      uint64_t timeBacket;
+      TArtRawV2740DataObject *rdata = new TArtRawV2740DataObject((int)channel);
+      rdata->SetTimeStamp(timeStamp);
+      rdata->SetFormat(format);            
+      rdata->SetFineTimeStamp(fineTimeStamp);
+      rdata->SetEnergy(energy);
+      rdata->SetFlagWaveform(flagWaveform);
+      rdata->SetAnalogProbeInfo (0, analogProbeInfo0);
+      rdata->SetAnalogProbeInfo (1, analogProbeInfo1);
+      rdata->SetDigitalProbeInfo(0, digitalProbeInfo0);
+      rdata->SetDigitalProbeInfo(1, digitalProbeInfo1);
+      rdata->SetDigitalProbeInfo(2, digitalProbeInfo2);
+      rdata->SetDigitalProbeInfo(3, digitalProbeInfo3);
+
+      if(flagWaveform){
+	uint64_t waveformHeader = Permute2ManualFormat(evtData[focusAddress]);
+	focusAddress += 1;      
+	uint64_t waveformWords  = waveformHeader & 0x0000000000000fff; //[8 Byte]
+#ifdef TARTDECODEV2740_DEBUG     	
+	std::cout<<std::dec<<"waveformWords = "<<waveformWords<<std::endl;
+#endif
+
+	for(uint64_t iword=0;iword<waveformWords;iword++){
+	  uint64_t sampleWord = Permute2ManualFormat(evtData[focusAddress+iword]);
+	  int16_t analogProbe0, analogProbe1;
+	  uint16_t digitalProbe0, digitalProbe1, digitalProbe2, digitalProbe3;
+	  
+	  analogProbe0=0;
+	  analogProbe1=0;
+	  digitalProbe0=0;
+	  digitalProbe1=0;
+	  digitalProbe2=0;
+	  digitalProbe3=0;
+	  analogProbe0  |= (sampleWord & 0x0000000000003fff);
+	  digitalProbe0 |= (sampleWord & 0x0000000000004000)>>14;
+	  digitalProbe1 |= (sampleWord & 0x0000000000008000)>>15;
+	  analogProbe1  |= (sampleWord & 0x000000003fff0000)>>16;
+	  digitalProbe2 |= (sampleWord & 0x0000000040000000)>>30;
+	  digitalProbe3 |= (sampleWord & 0x0000000080000000)>>31;
+	  rdata->AddProbes(2*iword, analogProbe0, analogProbe1, digitalProbe0, digitalProbe1, digitalProbe2, digitalProbe3);
+
+#ifdef TARTDECODEV2740_DEBUG     	
+	  std::cout<<"TimeBacket = "<<2*iword
+		   <<" AnalogProbe0 = "<<analogProbe0
+		   <<" AnalogProbe1 = "<<analogProbe1
+		   <<" DigitalProbe0 = "<<digitalProbe0
+		   <<" DigitalProbe1 = "<<digitalProbe1
+		   <<" DigitalProbe2 = "<<digitalProbe2
+		   <<" DigitalProbe3 = "<<digitalProbe3	    
+		   <<std::endl;
+#endif
+
+	  analogProbe0=0;
+	  analogProbe1=0;
+	  digitalProbe0=0;
+	  digitalProbe1=0;
+	  digitalProbe2=0;
+	  digitalProbe3=0;
+	  analogProbe0  |= (sampleWord & 0x00003fff00000000)>>32;
+	  digitalProbe0 |= (sampleWord & 0x0000400000000000)>>46;
+	  digitalProbe1 |= (sampleWord & 0x0000800000000000)>>47;
+	  analogProbe1  |= (sampleWord & 0x3fff000000000000)>>48;
+	  digitalProbe2 |= (sampleWord & 0x4000000000000000)>>62;
+	  digitalProbe3 |= (sampleWord & 0x8000000000000000)>>63;
+	  rdata->AddProbes(2*iword+1, analogProbe0, analogProbe1, digitalProbe0, digitalProbe1, digitalProbe2, digitalProbe3);
+
+#ifdef TARTDECODEV2740_DEBUG     	
+	  std::cout<<"TimeBacket = "<<2*iword+1
+		   <<" AnalogProbe0 = "<<analogProbe0
+		   <<" AnalogProbe1 = "<<analogProbe1
+		   <<" DigitalProbe0 = "<<digitalProbe0
+		   <<" DigitalProbe1 = "<<digitalProbe1
+		   <<" DigitalProbe2 = "<<digitalProbe2
+		   <<" DigitalProbe3 = "<<digitalProbe3	    
+		   <<std::endl;	  
+#endif
+	}
+	focusAddress += waveformWords;      		
+      }
+
+      
+      if(focusAddress>totalSize){
+	std::cerr<<"<TArtDecoderV2740::Decode()> ERROR : sum of size is over totalSize."<<std::endl;
+	break;
+      }
+      rawseg->PutV2740Data(rdata);      
+    }
+    
+    return 0;
+  }
+  else{ //Special Events(Start Run Event is dropped at babies)
+    std::cout<<"special events!"<<std::endl;
+    TArtRawV2740DataObject *rdata = new TArtRawV2740DataObject();
+    rdata->AddVal(-1, -1);
+    rawseg->PutV2740Data(rdata);
+    return 1;
+  }
+   
+   return 0;
+}
+
+
+uint64_t TArtDecoderV2740::Permute2ManualFormat(const uint64_t before){
+  uint64_t after = 0x0000000000000000;
+  uint64_t cListBefore[16], cListAfter[16];
+
+  for(int i=0;i<16;i++){
+    cListBefore[i] = (before>>(4*i))&0x000000000000000f;
+  }
+
+  cListAfter[14] = cListBefore[0];
+  cListAfter[15] = cListBefore[1];
+  cListAfter[12] = cListBefore[2];
+  cListAfter[13] = cListBefore[3];
+  cListAfter[10] = cListBefore[4];
+  cListAfter[11] = cListBefore[5];
+  cListAfter[8]  = cListBefore[6];
+  cListAfter[9]  = cListBefore[7];
+  cListAfter[6]  = cListBefore[8];
+  cListAfter[7]  = cListBefore[9];
+  cListAfter[4]  = cListBefore[10];
+  cListAfter[5]  = cListBefore[11];
+  cListAfter[2]  = cListBefore[12];
+  cListAfter[3]  = cListBefore[13];
+  cListAfter[0]  = cListBefore[14];
+  cListAfter[1]  = cListBefore[15];
+
+  for(int i=0;i<16;i++){
+    after |= (cListAfter[i]<<(4*i));
+  }
+  
+  return after;
+}
