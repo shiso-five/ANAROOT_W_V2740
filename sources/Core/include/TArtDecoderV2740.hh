@@ -13,7 +13,7 @@ private:
   TArtDecoderV2740();
   TArtDecoderV2740(const TArtDecoderV2740 &rhs);
 public:
-  static const int kID = 51;
+  static const int kID = 52;
   static const int NCH = 64;
   static TArtDecoder* Instance();
   ~TArtDecoderV2740();

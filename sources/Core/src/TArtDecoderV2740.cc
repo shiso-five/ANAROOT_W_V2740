@@ -90,6 +90,7 @@ int TArtDecoderV2740::Decode(unsigned char* &buf, const unsigned int& size, TArt
       rdata[i] = new TArtRawV2740DataObject(i);
       rdata[i]->SetTimeStamp(timeStamp);
       rdata[i]->SetFormat(format);
+      rdata[i]->SetFlagIsLast(0);          
     }
 
     for(uint64_t i=0;i<Nquart;i++){
@@ -115,16 +116,18 @@ int TArtDecoderV2740::Decode(unsigned char* &buf, const unsigned int& size, TArt
       uint64_t header2 = Permute2ManualFormat(evtData[focusAddress+1]);
       uint8_t  channel           = (header1   & 0x7f00000000000000)>>56;
       uint64_t timeStamp         =  header1   & 0x0000ffffffffffff;
-      uint16_t fineTimeStamp     = (header2   & 0x0000000003ff0000)>>16;
+      //      uint16_t fineTimeStamp     = (header2   & 0x0000000003ff0000)>>16;
+      uint32_t chTriggerCnt      = (header2   & 0x000000ffffff0000)>>16;
       uint16_t energy            =  header2   & 0x000000000000ffff;
       uint8_t  flagWaveform      = (header2   & 0x4000000000000000)>>60;
-      uint8_t  flagIsLast        = (header2   & 0x8000000000000000)>>63;      
+      uint8_t  flagIsLast        = (header2   & 0x8000000000000000)>>63;      //whether waveforms exist. 0 : exist, 1 : NOT exist
       focusAddress += 2;      
       uint64_t timeBacket;
       TArtRawV2740DataObject *rdata = new TArtRawV2740DataObject((int)channel);
       rdata->SetTimeStamp(timeStamp);
       rdata->SetFormat(format);            
-      rdata->SetFineTimeStamp(fineTimeStamp);
+      //      rdata->SetFineTimeStamp(fineTimeStamp);
+      rdata->SetChTriggerCnt(chTriggerCnt);
       rdata->SetEnergy(energy);
       rdata->SetFlagWaveform(flagWaveform);
       rdata->SetFlagIsLast(flagIsLast);

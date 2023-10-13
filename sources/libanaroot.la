@@ -38,5 +38,5 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/opt/anaroot/lib'
-relink_command="(cd /home/quser/src/anaroot/sources; /bin/sh \"/home/quser/src/anaroot/libtool\"  --tag CC --mode=relink gcc -g -O2 -o libanaroot.la -rpath /opt/anaroot/lib AnaLoop/Core/libanaloop.la AnaLoop/Example/libanaloopexample.la AnaLoop/EncExample/libanaloopencexample.la Core/libanacore.la Nadeko/libananadeko.la Reconstruction/BigRIPS/libanabrips.la Reconstruction/DALI/libanadali.la Reconstruction/WINDS/libanawinds.la Reconstruction/ESPRI/libanaespri.la Reconstruction/SAMURAI/libanasamurai.la Reconstruction/SILICONS/libanasilicons.la Reconstruction/CATANA/libanacatana.la @inst_prefix_dir@)"
+libdir='/usr/local/lib'
+relink_command="(cd /home/quser/src/anaroot/sources; /bin/sh \"/home/quser/src/anaroot/libtool\"  --tag CC --mode=relink gcc -g -O2 -o libanaroot.la -rpath /usr/local/lib AnaLoop/Core/libanaloop.la AnaLoop/Example/libanaloopexample.la AnaLoop/EncExample/libanaloopencexample.la Core/libanacore.la Nadeko/libananadeko.la Reconstruction/BigRIPS/libanabrips.la Reconstruction/DALI/libanadali.la Reconstruction/WINDS/libanawinds.la Reconstruction/ESPRI/libanaespri.la Reconstruction/SAMURAI/libanasamurai.la Reconstruction/SILICONS/libanasilicons.la Reconstruction/CATANA/libanacatana.la @inst_prefix_dir@)"

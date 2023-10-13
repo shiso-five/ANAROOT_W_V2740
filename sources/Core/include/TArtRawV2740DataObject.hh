@@ -27,6 +27,8 @@ class TArtRawV2740DataObject : public TNamed
   virtual void      SetTimeStamp       (const uint64_t);
   virtual uint16_t  GetFineTimeStamp   (void);  
   virtual void      SetFineTimeStamp   (const uint16_t);
+  virtual uint32_t  GetChTriggerCnt    (void);  
+  virtual void      SetChTriggerCnt    (const uint32_t);  
   virtual uint16_t  GetEnergy          (void);  
   virtual void      SetEnergy          (const uint16_t);
   virtual uint8_t   GetDigitalProbeInfo(int);  
@@ -58,6 +60,7 @@ class TArtRawV2740DataObject : public TNamed
   int                   channel;  // channel in the (CAMAC/VME) module
   uint64_t              format;
   uint64_t              timeStamp;
+  uint32_t              chTriggerCnt;
   uint16_t              fineTimeStamp,      energy;
   uint8_t               analogProbeInfo[2], digitalProbeInfo[4], flagWaveform, flagIsLast;
   std::vector<int>      timebacket;

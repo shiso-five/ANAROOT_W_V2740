@@ -1,0 +1,135 @@
+/*
+ * @file TArtDecoderV2740NOTDivided.cc
+ * S.Ogio 20230209
+ */
+#include "TArtDecoderV2740NOTDivided.hh"
+#include "TArtDecoderFactory.hh"
+#include "TArtCore.hh"
+#include "TMath.h"
+#include <stdio.h>
+#include <stdint.h>
+#include <inttypes.h>
+#include <iostream>
+#include <bitset>
+
+TArtDecoderV2740NOTDivided::TArtDecoderV2740NOTDivided()
+  : TArtDecoder(kID), counter(0), evtCnt(0){
+}
+TArtDecoderV2740NOTDivided::TArtDecoderV2740NOTDivided(const TArtDecoderV2740NOTDivided &rhs)
+  : counter(0), evtCnt(0){
+}
+
+TArtDecoderV2740NOTDivided::~TArtDecoderV2740NOTDivided()
+{
+  std::cout<<"EvtCnt = "<<std::dec<<evtCnt<<std::endl;
+}
+
+TArtDecoder* TArtDecoderV2740NOTDivided::Instance()
+{
+   static TArtDecoderV2740NOTDivided instance;
+   return &instance;
+}
+
+int TArtDecoderV2740NOTDivided::Decode(unsigned char* &buf, const unsigned int& size, TArtRawSegmentObject* rawseg){
+
+  uint64_t *evtData       = (uint64_t*) buf;  
+  uint64_t header0 = Permute2ManualFormat(evtData[0]);
+  
+  char     eventType = (header0 & 0xff00000000000000) >> 56;
+  uint64_t totalSize = (header0 & 0x00000000ffffffff);
+
+//  if(counter<10){
+//    if(eventType == 0x30){
+//      std::cout<<"Special Event!"<<std::endl;
+//      std::cout<<"header0    = 0x"<<std::hex<<std::setw(16)<<std::setfill('0')<<header0<<std::endl;
+//      std::cout<<"TotalSize = "<<std::dec<<totalSize<<std::endl;
+//    }
+//    if(eventType == 0x28){
+//      std::cout<<"Common Header!"<<std::endl;
+//      std::cout<<"header0    = 0x"<<std::hex<<std::setw(16)<<std::setfill('0')<<header0<<std::endl;
+//      std::cout<<"TotalSize = "<<std::dec<<totalSize<<std::endl;      
+//    }
+//  }
+
+  if(eventType == 0x30){
+    std::cout<<"Special Event!"<<std::endl;
+  }
+  if(eventType == 0x28){ //whether normal DPP event
+    uint64_t isize =  1;
+    while(isize != totalSize){ //until the end of aggregated event
+      uint16_t ch1 = (Permute2ManualFormat(evtData[isize]) & 0xffff000000000000) >> 48;
+      //      std::cout<<"ch1 = "<<ch1<<" evtData[isize] = 0x"<<std::hex<<std::setw(16)<<std::setfill('0')<<Permute2ManualFormat(evtData[isize])<<std::endl;		            
+      if( (ch1 == 0x0100) && ((evtData+isize+1) != nullptr) ){ //whether get correct ch = 1 
+	uint32_t priority = (Permute2ManualFormat(evtData[isize+1]) & 0xffff000000000000) >> 48;
+	//	if( (priority == 0x4100) || (priority == 0x8120)){  //proper priority for No Waveform
+	if( priority == 0x4020 ){  //proper priority for Waveform	
+	  evtCnt++;
+	  //	  isize+=2; //for No Waveform
+	  isize+=940; //for Waveform	  
+	}
+	if( priority == 0x8020 ){  //proper priority for Waveform
+	  evtCnt++;
+	  //	  isize+=2; //for No Waveform
+	  isize+=2; //for Waveform
+	}
+	else{
+	  //	  std::cout<<"FILE is "<<__FILE__<<" LINE = "<<__LINE__<<std::endl;
+	  //	  std::cout<<"evtData[isize+1] = "<<std::hex<<std::setw(16)<<std::setfill('0')<<Permute2ManualFormat(evtData[isize+1])<<std::endl; 
+	  isize++;
+	}
+      }
+      else{
+	//	std::cout<<"FILE is "<<__FILE__<<" LINE = "<<__LINE__<<std::endl;
+	//	std::cout<<"evtData[isize] = "<<std::hex<<std::setw(16)<<std::setfill('0')<<Permute2ManualFormat(evtData[isize+1])<<std::endl; 	
+	isize++;
+      }
+    }
+  }
+  else{
+    std::cout<<"FILE is "<<__FILE__<<" LINE = "<<__LINE__<<std::endl;
+    std::cout<<"evtData[0] = "<<std::hex<<std::setw(16)<<std::setfill('0')<<Permute2ManualFormat(evtData[0])<<std::endl; 	    
+    std::cout<<"Not normal event"<<std::endl;
+  }
+
+  TArtRawV2740DataObject *rdata = new TArtRawV2740DataObject();
+  rdata->AddVal(-1, -1);
+  rawseg->PutV2740Data(rdata);
+
+  counter++;
+  
+  
+   return 0;
+}
+
+
+uint64_t TArtDecoderV2740NOTDivided::Permute2ManualFormat(const uint64_t before){
+  uint64_t after = 0x0000000000000000;
+  uint64_t cListBefore[16], cListAfter[16];
+
+  for(int i=0;i<16;i++){
+    cListBefore[i] = (before>>(4*i))&0x000000000000000f;
+  }
+
+  cListAfter[14] = cListBefore[0];
+  cListAfter[15] = cListBefore[1];
+  cListAfter[12] = cListBefore[2];
+  cListAfter[13] = cListBefore[3];
+  cListAfter[10] = cListBefore[4];
+  cListAfter[11] = cListBefore[5];
+  cListAfter[8]  = cListBefore[6];
+  cListAfter[9]  = cListBefore[7];
+  cListAfter[6]  = cListBefore[8];
+  cListAfter[7]  = cListBefore[9];
+  cListAfter[4]  = cListBefore[10];
+  cListAfter[5]  = cListBefore[11];
+  cListAfter[2]  = cListBefore[12];
+  cListAfter[3]  = cListBefore[13];
+  cListAfter[0]  = cListBefore[14];
+  cListAfter[1]  = cListBefore[15];
+
+  for(int i=0;i<16;i++){
+    after |= (cListAfter[i]<<(4*i));
+  }
+  
+  return after;
+}

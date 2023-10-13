@@ -205,14 +205,13 @@ anacore_dict.lo: anacore_dict.cc /usr/include/stdc-predef.h \
  /opt/root_6.16.0/include/TCollectionProxyInfo.h \
  /usr/include/c++/8/forward_list /usr/include/c++/8/bits/forward_list.h \
  /usr/include/c++/8/bits/forward_list.tcc \
- /opt/root_6.16.0/include/TDataMember.h \
- include/TArtDecoderBigEndianV7XX.hh include/TArtDecoder.hh \
- include/TArtRawSegmentObject.hh /opt/root_6.16.0/include/TObject.h \
- include/TArtRawDataObject.hh /opt/root_6.16.0/include/TNamed.h \
- include/TArtRawFADCDataObject.hh include/TArtCore.hh \
- /opt/root_6.16.0/include/TString.h include/TArtRawV2740DataObject.hh \
- /usr/include/c++/8/iostream include/TArtRawTacquilaDataObject.hh \
- include/TArtDecoderFixed16.hh include/TArtCore.hh \
+ /opt/root_6.16.0/include/TDataMember.h include/TArtDecoderFixed16.hh \
+ include/TArtDecoder.hh include/TArtRawSegmentObject.hh \
+ /opt/root_6.16.0/include/TObject.h include/TArtRawDataObject.hh \
+ /opt/root_6.16.0/include/TNamed.h include/TArtRawFADCDataObject.hh \
+ include/TArtCore.hh /opt/root_6.16.0/include/TString.h \
+ include/TArtRawV2740DataObject.hh /usr/include/c++/8/iostream \
+ include/TArtRawTacquilaDataObject.hh include/TArtCore.hh \
  include/TArtDecoderLUPO.hh include/TArtDecoderAMTTDC.hh \
  include/TArtDecoderMQDC32.hh include/TArtDecoderV1740.hh \
  include/TArtRawFADCDataObject.hh include/TArtDecoderHINP.hh \
@@ -221,17 +220,18 @@ anacore_dict.lo: anacore_dict.cc /usr/include/stdc-predef.h \
  /usr/include/bits/ipc.h /usr/include/sys/sem.h /usr/include/bits/sem.h \
  include/TArtRawTacquilaDataObject.hh include/TArtDecoderV1190.hh \
  include/TArtDecoderV7XX.hh include/TArtDecoderMDPP16.hh \
- include/TArtDecoderV767.hh include/TArtMath.hh \
- include/TArtDecoderFixed32.hh include/TArtParserFactory.hh \
- include/TArtParser.hh include/TArtDataSource.hh \
- include/TArtRawEventObject.hh include/TArtRawScalerObject.hh \
- include/TArtReconstruction.hh include/TArtDecoder.hh \
- include/TArtSharedMemory.hh include/TArtDecoderA3100.hh \
- include/TArtSharedMemoryDataSource.hh include/TArtSharedMemory.hh \
- include/TArtSemaphore.hh include/TArtDecoderMADC32.hh \
- include/TArtDecoderP716X.hh include/TArtDecoderFixed24.hh \
- include/TArtDecoderV1290.hh include/TArtDataObject.hh \
- include/TArtEventStore.hh /usr/include/sys/shm.h /usr/include/bits/shm.h \
+ include/TArtDecoderV2740NOTDivided.hh include/TArtDecoderV767.hh \
+ include/TArtMath.hh include/TArtDecoderFixed32.hh \
+ include/TArtParserFactory.hh include/TArtParser.hh \
+ include/TArtDataSource.hh include/TArtRawEventObject.hh \
+ include/TArtRawScalerObject.hh include/TArtReconstruction.hh \
+ include/TArtDecoder.hh include/TArtSharedMemory.hh \
+ include/TArtDecoderA3100.hh include/TArtSharedMemoryDataSource.hh \
+ include/TArtSharedMemory.hh include/TArtSemaphore.hh \
+ include/TArtDecoderMADC32.hh include/TArtDecoderP716X.hh \
+ include/TArtDecoderFixed24.hh include/TArtDecoderV1290.hh \
+ include/TArtDataObject.hh include/TArtEventStore.hh \
+ /usr/include/sys/shm.h /usr/include/bits/shm.h \
  /usr/include/c++/8/fstream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++io.h \
@@ -283,7 +283,8 @@ anacore_dict.lo: anacore_dict.cc /usr/include/stdc-predef.h \
  include/TArtEventInfo.hh include/TArtDecoderV830.hh \
  include/TArtRawV2740DataObject.hh include/TArtDecoderA3400.hh \
  include/TArtDecoderL3377d.hh include/TArtDecoderV1190C.hh \
- include/TArtStreamingDataSource.hh include/TArtUtil.hh
+ include/TArtStreamingDataSource.hh include/TArtUtil.hh \
+ include/TArtDecoderBigEndianV7XX.hh
 
 /usr/include/stdc-predef.h:
 
@@ -893,7 +894,7 @@ anacore_dict.lo: anacore_dict.cc /usr/include/stdc-predef.h \
 
 /opt/root_6.16.0/include/TDataMember.h:
 
-include/TArtDecoderBigEndianV7XX.hh:
+include/TArtDecoderFixed16.hh:
 
 include/TArtDecoder.hh:
 
@@ -916,8 +917,6 @@ include/TArtRawV2740DataObject.hh:
 /usr/include/c++/8/iostream:
 
 include/TArtRawTacquilaDataObject.hh:
-
-include/TArtDecoderFixed16.hh:
 
 include/TArtCore.hh:
 
@@ -954,6 +953,8 @@ include/TArtDecoderV1190.hh:
 include/TArtDecoderV7XX.hh:
 
 include/TArtDecoderMDPP16.hh:
+
+include/TArtDecoderV2740NOTDivided.hh:
 
 include/TArtDecoderV767.hh:
 
@@ -1184,3 +1185,5 @@ include/TArtDecoderV1190C.hh:
 include/TArtStreamingDataSource.hh:
 
 include/TArtUtil.hh:
+
+include/TArtDecoderBigEndianV7XX.hh:

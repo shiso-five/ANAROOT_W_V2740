@@ -61,6 +61,14 @@ void TArtRawV2740DataObject::SetFineTimeStamp(const uint16_t inFineTimeStamp){
   return;
 }
 
+uint32_t  TArtRawV2740DataObject::GetChTriggerCnt(void){
+  return chTriggerCnt;
+}
+void TArtRawV2740DataObject::SetChTriggerCnt(const uint32_t inChTriggerCnt){
+  chTriggerCnt = inChTriggerCnt;
+  return;
+}
+
 uint16_t TArtRawV2740DataObject::GetEnergy(void){
   if(format == 0x02){
     return energy;

@@ -31,6 +31,7 @@
 #pragma link C++ class TArtDecoderV1290-!;
 #pragma link C++ class TArtDecoderV1740-!;
 #pragma link C++ class TArtDecoderV2740-!;
+#pragma link C++ class TArtDecoderV2740NOTDivided-!;
 #pragma link C++ class TArtDecoderV550-!;
 #pragma link C++ class TArtDecoderV767-!;
 #pragma link C++ class TArtDecoderV7XX-!;

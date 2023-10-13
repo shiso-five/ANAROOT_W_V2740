@@ -38,6 +38,8 @@ PATH: /usr/local/sbin
 PATH: /usr/sbin
 PATH: /opt/babirl/bin
 PATH: /opt/gnuplot/bin
+PATH: /opt/babirl/bin
+PATH: /opt/gnuplot/bin
 
 
 ## ----------- ##
@@ -669,7 +671,7 @@ configure:17252: $? = 0
 configure:17252: result: yes
 configure:17258: checking for _doprnt
 configure:17258: gcc -o conftest -g -O2   conftest.c  >&5
-/tmp/ccpJwV3e.o: In function `main':
+/tmp/ccjRK403.o: In function `main':
 /home/quser/src/anaroot/conftest.c:69: undefined reference to `_doprnt'
 collect2: error: ld returned 1 exit status
 configure:17258: $? = 1

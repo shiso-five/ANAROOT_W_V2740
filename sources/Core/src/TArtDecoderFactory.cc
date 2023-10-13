@@ -21,6 +21,7 @@
 #include "TArtDecoderV7XX.hh"
 #include "TArtDecoderV1740.hh"
 #include "TArtDecoderV2740.hh" //ogio
+#include "TArtDecoderV2740NOTDivided.hh" //ogio
 #include "TArtDecoderV1190.hh"
 #include "TArtDecoderV1190C.hh"
 #include "TArtDecoderV1290.hh"
@@ -67,6 +68,7 @@ void TArtDecoderFactory::Register()
    Register(TArtDecoderV7XX::Instance());
    Register(TArtDecoderV1740::Instance());
    Register(TArtDecoderV2740::Instance());    //ogio
+   Register(TArtDecoderV2740NOTDivided::Instance());    //ogio   
    Register(TArtDecoderV1190::Instance());
    Register(TArtDecoderV1190C::Instance());
    Register(TArtDecoderV1290::Instance());

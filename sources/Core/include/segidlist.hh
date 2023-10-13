@@ -221,7 +221,8 @@ static const int MUST2VXI   = 50;
 static const int MINOS      = 53;
 static const int TACQUILA   = 54;
 static const int A3400      = 55;
-static const int V2740      = 51; //ogio
+static const int V2740      = 52; //ogio
+static const int V2740NOTDivided = 51; //ogio
 //static const int SILICONS   = 666; // to be defined, GiB 1 May 18
 
 static const int MDAQ       = 58;  // for special case

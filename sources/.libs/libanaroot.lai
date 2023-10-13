@@ -17,7 +17,7 @@ old_library=''
 inherited_linker_flags=' -pthread'
 
 # Libraries that this one depends upon.
-dependency_libs=' /opt/anaroot/lib/libanaloop.la -L/opt/root_6.16.0/lib /opt/anaroot/lib/libanaloopexample.la /opt/anaroot/lib/libanaloopencexample.la /opt/anaroot/lib/libanacore.la /opt/anaroot/lib/libananadeko.la /opt/anaroot/lib/libanabrips.la /opt/anaroot/lib/libanadali.la /opt/anaroot/lib/libanawinds.la /opt/anaroot/lib/libanaespri.la /opt/anaroot/lib/libanasamurai.la /opt/anaroot/lib/libanasilicons.la /opt/anaroot/lib/libanacatana.la -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl'
+dependency_libs=' /opt/anaroot/lib/libanaloop.la -L/opt/root_6.16.0/lib /opt/anaroot/lib/libanaloopexample.la /opt/anaroot/lib/libanaloopencexample.la /usr/local/lib/libanacore.la /opt/anaroot/lib/libananadeko.la /opt/anaroot/lib/libanabrips.la /opt/anaroot/lib/libanadali.la /opt/anaroot/lib/libanawinds.la /opt/anaroot/lib/libanaespri.la /opt/anaroot/lib/libanasamurai.la /opt/anaroot/lib/libanasilicons.la /opt/anaroot/lib/libanacatana.la -lGui -lCore -lImt -lRIO -lNet -lHist -lGraf -lGraf3d -lGpad -lROOTVecOps -lTree -lTreePlayer -lRint -lPostscript -lMatrix -lPhysics -lMathCore -lThread -lMultiProc -lROOTDataFrame -ldl'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/opt/anaroot/lib'
+libdir='/usr/local/lib'

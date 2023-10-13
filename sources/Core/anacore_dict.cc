@@ -37,7 +37,6 @@
 namespace std {} using namespace std;
 
 // Header files passed as explicit arguments
-#include "include/TArtDecoderBigEndianV7XX.hh"
 #include "include/TArtDecoderFixed16.hh"
 #include "include/TArtCore.hh"
 #include "include/TArtDecoderLUPO.hh"
@@ -52,6 +51,7 @@ namespace std {} using namespace std;
 #include "include/TArtDecoderV1190.hh"
 #include "include/TArtDecoderV7XX.hh"
 #include "include/TArtDecoderMDPP16.hh"
+#include "include/TArtDecoderV2740NOTDivided.hh"
 #include "include/TArtDecoderV767.hh"
 #include "include/TArtMath.hh"
 #include "include/TArtDecoderFixed32.hh"
@@ -99,6 +99,7 @@ namespace std {} using namespace std;
 #include "include/TArtDecoderV1190C.hh"
 #include "include/TArtStreamingDataSource.hh"
 #include "include/TArtUtil.hh"
+#include "include/TArtDecoderBigEndianV7XX.hh"
 
 // Header files passed via #pragma extra_include
 
@@ -331,47 +332,6 @@ namespace ROOT {
    }
 
    static void TArtDecoder_TClassManip(TClass* ){
-   }
-
-} // end of namespace ROOT
-
-namespace ROOT {
-   static TClass *TArtDecoderBigEndianV7XX_Dictionary();
-   static void TArtDecoderBigEndianV7XX_TClassManip(TClass*);
-   static void delete_TArtDecoderBigEndianV7XX(void *p);
-   static void deleteArray_TArtDecoderBigEndianV7XX(void *p);
-   static void destruct_TArtDecoderBigEndianV7XX(void *p);
-
-   // Function generating the singleton type initializer
-   static TGenericClassInfo *GenerateInitInstanceLocal(const ::TArtDecoderBigEndianV7XX*)
-   {
-      ::TArtDecoderBigEndianV7XX *ptr = 0;
-      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::TArtDecoderBigEndianV7XX));
-      static ::ROOT::TGenericClassInfo 
-         instance("TArtDecoderBigEndianV7XX", "TArtDecoderBigEndianV7XX.hh", 7,
-                  typeid(::TArtDecoderBigEndianV7XX), ::ROOT::Internal::DefineBehavior(ptr, ptr),
-                  &TArtDecoderBigEndianV7XX_Dictionary, isa_proxy, 3,
-                  sizeof(::TArtDecoderBigEndianV7XX) );
-      instance.SetDelete(&delete_TArtDecoderBigEndianV7XX);
-      instance.SetDeleteArray(&deleteArray_TArtDecoderBigEndianV7XX);
-      instance.SetDestructor(&destruct_TArtDecoderBigEndianV7XX);
-      return &instance;
-   }
-   TGenericClassInfo *GenerateInitInstance(const ::TArtDecoderBigEndianV7XX*)
-   {
-      return GenerateInitInstanceLocal((::TArtDecoderBigEndianV7XX*)0);
-   }
-   // Static variable to force the class initialization
-   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::TArtDecoderBigEndianV7XX*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
-
-   // Dictionary for non-ClassDef classes
-   static TClass *TArtDecoderBigEndianV7XX_Dictionary() {
-      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::TArtDecoderBigEndianV7XX*)0x0)->GetClass();
-      TArtDecoderBigEndianV7XX_TClassManip(theClass);
-   return theClass;
-   }
-
-   static void TArtDecoderBigEndianV7XX_TClassManip(TClass* ){
    }
 
 } // end of namespace ROOT
@@ -782,6 +742,47 @@ namespace ROOT {
    }
 
    static void TArtDecoderMDPP16_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
+namespace ROOT {
+   static TClass *TArtDecoderV2740NOTDivided_Dictionary();
+   static void TArtDecoderV2740NOTDivided_TClassManip(TClass*);
+   static void delete_TArtDecoderV2740NOTDivided(void *p);
+   static void deleteArray_TArtDecoderV2740NOTDivided(void *p);
+   static void destruct_TArtDecoderV2740NOTDivided(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::TArtDecoderV2740NOTDivided*)
+   {
+      ::TArtDecoderV2740NOTDivided *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::TArtDecoderV2740NOTDivided));
+      static ::ROOT::TGenericClassInfo 
+         instance("TArtDecoderV2740NOTDivided", "TArtDecoderV2740NOTDivided.hh", 11,
+                  typeid(::TArtDecoderV2740NOTDivided), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &TArtDecoderV2740NOTDivided_Dictionary, isa_proxy, 3,
+                  sizeof(::TArtDecoderV2740NOTDivided) );
+      instance.SetDelete(&delete_TArtDecoderV2740NOTDivided);
+      instance.SetDeleteArray(&deleteArray_TArtDecoderV2740NOTDivided);
+      instance.SetDestructor(&destruct_TArtDecoderV2740NOTDivided);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::TArtDecoderV2740NOTDivided*)
+   {
+      return GenerateInitInstanceLocal((::TArtDecoderV2740NOTDivided*)0);
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::TArtDecoderV2740NOTDivided*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *TArtDecoderV2740NOTDivided_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::TArtDecoderV2740NOTDivided*)0x0)->GetClass();
+      TArtDecoderV2740NOTDivided_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void TArtDecoderV2740NOTDivided_TClassManip(TClass* ){
    }
 
 } // end of namespace ROOT
@@ -2395,6 +2396,47 @@ namespace ROOT {
 
 } // end of namespace ROOT
 
+namespace ROOT {
+   static TClass *TArtDecoderBigEndianV7XX_Dictionary();
+   static void TArtDecoderBigEndianV7XX_TClassManip(TClass*);
+   static void delete_TArtDecoderBigEndianV7XX(void *p);
+   static void deleteArray_TArtDecoderBigEndianV7XX(void *p);
+   static void destruct_TArtDecoderBigEndianV7XX(void *p);
+
+   // Function generating the singleton type initializer
+   static TGenericClassInfo *GenerateInitInstanceLocal(const ::TArtDecoderBigEndianV7XX*)
+   {
+      ::TArtDecoderBigEndianV7XX *ptr = 0;
+      static ::TVirtualIsAProxy* isa_proxy = new ::TIsAProxy(typeid(::TArtDecoderBigEndianV7XX));
+      static ::ROOT::TGenericClassInfo 
+         instance("TArtDecoderBigEndianV7XX", "TArtDecoderBigEndianV7XX.hh", 7,
+                  typeid(::TArtDecoderBigEndianV7XX), ::ROOT::Internal::DefineBehavior(ptr, ptr),
+                  &TArtDecoderBigEndianV7XX_Dictionary, isa_proxy, 3,
+                  sizeof(::TArtDecoderBigEndianV7XX) );
+      instance.SetDelete(&delete_TArtDecoderBigEndianV7XX);
+      instance.SetDeleteArray(&deleteArray_TArtDecoderBigEndianV7XX);
+      instance.SetDestructor(&destruct_TArtDecoderBigEndianV7XX);
+      return &instance;
+   }
+   TGenericClassInfo *GenerateInitInstance(const ::TArtDecoderBigEndianV7XX*)
+   {
+      return GenerateInitInstanceLocal((::TArtDecoderBigEndianV7XX*)0);
+   }
+   // Static variable to force the class initialization
+   static ::ROOT::TGenericClassInfo *_R__UNIQUE_DICT_(Init) = GenerateInitInstanceLocal((const ::TArtDecoderBigEndianV7XX*)0x0); R__UseDummy(_R__UNIQUE_DICT_(Init));
+
+   // Dictionary for non-ClassDef classes
+   static TClass *TArtDecoderBigEndianV7XX_Dictionary() {
+      TClass* theClass =::ROOT::GenerateInitInstanceLocal((const ::TArtDecoderBigEndianV7XX*)0x0)->GetClass();
+      TArtDecoderBigEndianV7XX_TClassManip(theClass);
+   return theClass;
+   }
+
+   static void TArtDecoderBigEndianV7XX_TClassManip(TClass* ){
+   }
+
+} // end of namespace ROOT
+
 //______________________________________________________________________________
 atomic_TClass_ptr TArtRawDataObject::fgIsA(0);  // static to hold class pointer
 
@@ -3274,20 +3316,6 @@ namespace ROOT {
 
 namespace ROOT {
    // Wrapper around operator delete
-   static void delete_TArtDecoderBigEndianV7XX(void *p) {
-      delete ((::TArtDecoderBigEndianV7XX*)p);
-   }
-   static void deleteArray_TArtDecoderBigEndianV7XX(void *p) {
-      delete [] ((::TArtDecoderBigEndianV7XX*)p);
-   }
-   static void destruct_TArtDecoderBigEndianV7XX(void *p) {
-      typedef ::TArtDecoderBigEndianV7XX current_t;
-      ((current_t*)p)->~current_t();
-   }
-} // end of namespace ROOT for class ::TArtDecoderBigEndianV7XX
-
-namespace ROOT {
-   // Wrapper around operator delete
    static void delete_TArtDecoderFixed16(void *p) {
       delete ((::TArtDecoderFixed16*)p);
    }
@@ -3425,6 +3453,20 @@ namespace ROOT {
       ((current_t*)p)->~current_t();
    }
 } // end of namespace ROOT for class ::TArtDecoderMDPP16
+
+namespace ROOT {
+   // Wrapper around operator delete
+   static void delete_TArtDecoderV2740NOTDivided(void *p) {
+      delete ((::TArtDecoderV2740NOTDivided*)p);
+   }
+   static void deleteArray_TArtDecoderV2740NOTDivided(void *p) {
+      delete [] ((::TArtDecoderV2740NOTDivided*)p);
+   }
+   static void destruct_TArtDecoderV2740NOTDivided(void *p) {
+      typedef ::TArtDecoderV2740NOTDivided current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class ::TArtDecoderV2740NOTDivided
 
 namespace ROOT {
    // Wrapper around operator delete
@@ -4269,6 +4311,20 @@ namespace ROOT {
 } // end of namespace ROOT for class ::TArtUtil
 
 namespace ROOT {
+   // Wrapper around operator delete
+   static void delete_TArtDecoderBigEndianV7XX(void *p) {
+      delete ((::TArtDecoderBigEndianV7XX*)p);
+   }
+   static void deleteArray_TArtDecoderBigEndianV7XX(void *p) {
+      delete [] ((::TArtDecoderBigEndianV7XX*)p);
+   }
+   static void destruct_TArtDecoderBigEndianV7XX(void *p) {
+      typedef ::TArtDecoderBigEndianV7XX current_t;
+      ((current_t*)p)->~current_t();
+   }
+} // end of namespace ROOT for class ::TArtDecoderBigEndianV7XX
+
+namespace ROOT {
    static TClass *vectorlEunsignedsPshortgR_Dictionary();
    static void vectorlEunsignedsPshortgR_TClassManip(TClass*);
    static void *new_vectorlEunsignedsPshortgR(void *p = 0);
@@ -4964,7 +5020,6 @@ namespace ROOT {
 namespace {
   void TriggerDictionaryInitialization_anacore_dict_Impl() {
     static const char* headers[] = {
-"include/TArtDecoderBigEndianV7XX.hh",
 "include/TArtDecoderFixed16.hh",
 "include/TArtCore.hh",
 "include/TArtDecoderLUPO.hh",
@@ -4979,6 +5034,7 @@ namespace {
 "include/TArtDecoderV1190.hh",
 "include/TArtDecoderV7XX.hh",
 "include/TArtDecoderMDPP16.hh",
+"include/TArtDecoderV2740NOTDivided.hh",
 "include/TArtDecoderV767.hh",
 "include/TArtMath.hh",
 "include/TArtDecoderFixed32.hh",
@@ -5026,6 +5082,7 @@ namespace {
 "include/TArtDecoderV1190C.hh",
 "include/TArtStreamingDataSource.hh",
 "include/TArtUtil.hh",
+"include/TArtDecoderBigEndianV7XX.hh",
 0
     };
     static const char* includePaths[] = {
@@ -5042,14 +5099,13 @@ namespace {
 extern int __Cling_Autoloading_Map;
 namespace std{template <typename _Tp> class __attribute__((annotate("$clingAutoload$bits/allocator.h")))  __attribute__((annotate("$clingAutoload$string")))  allocator;
 }
-class __attribute__((annotate("$clingAutoload$TArtRawDataObject.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderBigEndianV7XX.hh")))  TArtRawDataObject;
-class __attribute__((annotate("$clingAutoload$TArtCore.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderBigEndianV7XX.hh")))  TArtCore;
-class __attribute__((annotate("$clingAutoload$TArtRawFADCDataObject.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderBigEndianV7XX.hh")))  TArtRawFADCDataObject;
-class __attribute__((annotate("$clingAutoload$TArtRawV2740DataObject.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderBigEndianV7XX.hh")))  TArtRawV2740DataObject;
-class __attribute__((annotate("$clingAutoload$TArtRawTacquilaDataObject.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderBigEndianV7XX.hh")))  TArtRawTacquilaDataObject;
-class __attribute__((annotate("$clingAutoload$TArtRawSegmentObject.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderBigEndianV7XX.hh")))  TArtRawSegmentObject;
-class __attribute__((annotate("$clingAutoload$TArtDecoder.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderBigEndianV7XX.hh")))  TArtDecoder;
-class __attribute__((annotate("$clingAutoload$include/TArtDecoderBigEndianV7XX.hh")))  TArtDecoderBigEndianV7XX;
+class __attribute__((annotate("$clingAutoload$TArtRawDataObject.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderFixed16.hh")))  TArtRawDataObject;
+class __attribute__((annotate("$clingAutoload$TArtCore.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderFixed16.hh")))  TArtCore;
+class __attribute__((annotate("$clingAutoload$TArtRawFADCDataObject.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderFixed16.hh")))  TArtRawFADCDataObject;
+class __attribute__((annotate("$clingAutoload$TArtRawV2740DataObject.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderFixed16.hh")))  TArtRawV2740DataObject;
+class __attribute__((annotate("$clingAutoload$TArtRawTacquilaDataObject.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderFixed16.hh")))  TArtRawTacquilaDataObject;
+class __attribute__((annotate("$clingAutoload$TArtRawSegmentObject.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderFixed16.hh")))  TArtRawSegmentObject;
+class __attribute__((annotate("$clingAutoload$TArtDecoder.hh")))  __attribute__((annotate("$clingAutoload$include/TArtDecoderFixed16.hh")))  TArtDecoder;
 class __attribute__((annotate("$clingAutoload$include/TArtDecoderFixed16.hh")))  TArtDecoderFixed16;
 class __attribute__((annotate("$clingAutoload$include/TArtDecoderLUPO.hh")))  TArtDecoderLUPO;
 class __attribute__((annotate("$clingAutoload$include/TArtDecoderAMTTDC.hh")))  TArtDecoderAMTTDC;
@@ -5060,6 +5116,7 @@ class __attribute__((annotate("$clingAutoload$include/TArtSemaphore.hh")))  TArt
 class __attribute__((annotate("$clingAutoload$include/TArtDecoderV1190.hh")))  TArtDecoderV1190;
 class __attribute__((annotate("$clingAutoload$include/TArtDecoderV7XX.hh")))  TArtDecoderV7XX;
 class __attribute__((annotate("$clingAutoload$include/TArtDecoderMDPP16.hh")))  TArtDecoderMDPP16;
+class __attribute__((annotate("$clingAutoload$include/TArtDecoderV2740NOTDivided.hh")))  TArtDecoderV2740NOTDivided;
 class __attribute__((annotate("$clingAutoload$include/TArtDecoderV767.hh")))  TArtDecoderV767;
 class __attribute__((annotate("$clingAutoload$include/TArtMath.hh")))  TArtMath;
 class __attribute__((annotate("$clingAutoload$include/TArtDecoderFixed32.hh")))  TArtDecoderFixed32;
@@ -5102,6 +5159,7 @@ class __attribute__((annotate("$clingAutoload$include/TArtDecoderL3377d.hh")))  
 class __attribute__((annotate("$clingAutoload$include/TArtDecoderV1190C.hh")))  TArtDecoderV1190C;
 class __attribute__((annotate("$clingAutoload$include/TArtStreamingDataSource.hh")))  TArtStreamingDataSource;
 class __attribute__((annotate("$clingAutoload$include/TArtUtil.hh")))  TArtUtil;
+class __attribute__((annotate("$clingAutoload$include/TArtDecoderBigEndianV7XX.hh")))  TArtDecoderBigEndianV7XX;
 )DICTFWDDCLS";
     static const char* payloadCode = R"DICTPAYLOAD(
 #line 1 "anacore_dict dictionary payload"
@@ -5111,7 +5169,6 @@ class __attribute__((annotate("$clingAutoload$include/TArtUtil.hh")))  TArtUtil;
 #endif
 
 #define _BACKWARD_BACKWARD_WARNING_H
-#include "include/TArtDecoderBigEndianV7XX.hh"
 #include "include/TArtDecoderFixed16.hh"
 #include "include/TArtCore.hh"
 #include "include/TArtDecoderLUPO.hh"
@@ -5126,6 +5183,7 @@ class __attribute__((annotate("$clingAutoload$include/TArtUtil.hh")))  TArtUtil;
 #include "include/TArtDecoderV1190.hh"
 #include "include/TArtDecoderV7XX.hh"
 #include "include/TArtDecoderMDPP16.hh"
+#include "include/TArtDecoderV2740NOTDivided.hh"
 #include "include/TArtDecoderV767.hh"
 #include "include/TArtMath.hh"
 #include "include/TArtDecoderFixed32.hh"
@@ -5173,6 +5231,7 @@ class __attribute__((annotate("$clingAutoload$include/TArtUtil.hh")))  TArtUtil;
 #include "include/TArtDecoderV1190C.hh"
 #include "include/TArtStreamingDataSource.hh"
 #include "include/TArtUtil.hh"
+#include "include/TArtDecoderBigEndianV7XX.hh"
 
 #undef  _BACKWARD_BACKWARD_WARNING_H
 )DICTPAYLOAD";
@@ -5209,6 +5268,7 @@ class __attribute__((annotate("$clingAutoload$include/TArtUtil.hh")))  TArtUtil;
 "TArtDecoderV1290", payloadCode, "@",
 "TArtDecoderV1740", payloadCode, "@",
 "TArtDecoderV2740", payloadCode, "@",
+"TArtDecoderV2740NOTDivided", payloadCode, "@",
 "TArtDecoderV550", payloadCode, "@",
 "TArtDecoderV767", payloadCode, "@",
 "TArtDecoderV7XX", payloadCode, "@",
